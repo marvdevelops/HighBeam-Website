@@ -18,7 +18,6 @@ export function Footer() {
           </div>
           
           <div className="flex gap-6">
-            <a href="https://instagram.com/highbeamtech" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-primary transition-colors text-sm">Instagram</a>
             <a href="https://linkedin.com/company/highbeamdigital" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-primary transition-colors text-sm">LinkedIn</a>
             <a href="https://www.facebook.com/highbeamtech" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-primary transition-colors text-sm">Facebook</a>
           </div>

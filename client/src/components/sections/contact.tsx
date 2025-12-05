@@ -22,7 +22,6 @@ const formSchema = z.object({
   company: z.string().min(2, { message: "Company is required." }),
   email: z.string().email({ message: "Invalid email address." }),
   phone: z.string().optional(),
-  projectType: z.string({ required_error: "Please select a project type." }),
   description: z.string().min(10, { message: "Please describe your project." }),
 });
 
@@ -41,7 +40,7 @@ export function Contact() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
-    window.location.href = `mailto:info@highbeam.digital?subject=Inquiry from ${values.name} - ${values.company}&body=Name: ${values.name}%0D%0ACompany: ${values.company}%0D%0AEmail: ${values.email}%0D%0APhone: ${values.phone || 'N/A'}%0D%0AProject Type: ${values.projectType}%0D%0A%0D%0ADescription:%0D%0A${values.description}`;
+    window.location.href = `mailto:info@highbeam.digital?subject=Inquiry from ${values.name} - ${values.company}&body=Name: ${values.name}%0D%0ACompany: ${values.company}%0D%0AEmail: ${values.email}%0D%0APhone: ${values.phone || 'N/A'}%0D%0A%0D%0ADescription:%0D%0A${values.description}`;
     toast({
       title: "Opening Email Client",
       description: "Drafting your inquiry to info@highbeam.digital",
@@ -120,32 +119,6 @@ export function Contact() {
                         <FormControl>
                             <Input placeholder="+1 (555) 000-0000" {...field} className="bg-black border-zinc-800 text-white h-12 focus-visible:ring-primary" />
                         </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8">
-                    <FormField
-                    control={form.control}
-                    name="projectType"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel className="text-zinc-300">Project Type</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                            <FormControl>
-                            <SelectTrigger className="bg-black border-zinc-800 text-white h-12 focus:ring-primary">
-                                <SelectValue placeholder="Select type" />
-                            </SelectTrigger>
-                            </FormControl>
-                            <SelectContent className="bg-black border-zinc-800 text-white">
-                            <SelectItem value="interactive">Interactive Experience</SelectItem>
-                            <SelectItem value="immersive">Immersive Installation</SelectItem>
-                            <SelectItem value="web">Web Experience</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                            </SelectContent>
-                        </Select>
                         <FormMessage />
                         </FormItem>
                     )}
