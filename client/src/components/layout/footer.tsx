@@ -1,4 +1,4 @@
-import logoImage from "@assets/Logo@5x-100_1764948626323.jpg";
+import logoImage from "@assets/logo_1764953730931.png";
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
             <img 
               src={logoImage} 
               alt="HighBeam" 
-              className="h-8 w-auto object-contain mix-blend-screen invert hue-rotate-180" 
+              className="h-8 w-auto object-contain" 
             />
           </div>
           

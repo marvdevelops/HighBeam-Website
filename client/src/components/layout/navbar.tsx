@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/Logo@5x-100_1764948626323.jpg";
+import logoImage from "@assets/logo_1764953730931.png";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -39,7 +39,7 @@ export function Navbar() {
             <img 
               src={logoImage} 
               alt="HighBeam" 
-              className="h-12 w-auto object-contain mix-blend-screen invert hue-rotate-180" 
+              className="h-12 w-auto object-contain" 
             />
           </a>
         </Link>
