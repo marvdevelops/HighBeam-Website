@@ -1,20 +1,30 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import heroBg from "@assets/generated_images/dark_abstract_futuristic_background_with_subtle_yellow_light_beams.png";
+import { useRef } from "react";
 
 export function Hero() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section ref={ref} className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 z-0">
+      <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
         <img 
           src={heroBg} 
           alt="Background" 
           className="w-full h-full object-cover opacity-60"
         />
-      </div>
+      </motion.div>
 
       <div className="container mx-auto px-6 md:px-12 max-w-7xl relative z-20 grid md:grid-cols-2 gap-12 items-center">
         <motion.div 
@@ -23,7 +33,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-8"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tighter text-white">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter text-white uppercase">
             Turn Your <br />
             <span className="text-stroke">Vision</span> Into <br />
             an <span className="text-primary">Experience</span>

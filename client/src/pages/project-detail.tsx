@@ -5,9 +5,18 @@ import { ArrowLeft } from "lucide-react";
 import { useRoute, Link } from "wouter";
 import { projects } from "@/lib/data";
 import NotFound from "./not-found";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function ProjectDetailPage() {
   const [match, params] = useRoute("/work/:slug");
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   
   if (!match) return <NotFound />;
 
@@ -19,9 +28,10 @@ export default function ProjectDetailPage() {
     <Layout>
       <article>
         {/* Hero Image */}
-        <div className="w-full h-[60vh] relative">
+        <div ref={ref} className="w-full h-[80vh] relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 z-10" />
-            <img 
+            <motion.img 
+                style={{ y }}
                 src={project.image} 
                 alt={project.title} 
                 className="w-full h-full object-cover"
@@ -32,7 +42,7 @@ export default function ProjectDetailPage() {
                         <ArrowLeft className="w-4 h-4 mr-2" /> Back to Work
                     </Button>
                 </Link>
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{project.title}</h1>
+                <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 uppercase tracking-tighter">{project.title}</h1>
                 <p className="text-xl text-zinc-300 max-w-2xl">{project.shortDescription}</p>
             </div>
         </div>
