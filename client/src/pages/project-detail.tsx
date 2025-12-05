@@ -36,7 +36,7 @@ export default function ProjectDetailPage() {
                 alt={project.title} 
                 className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 right-0 z-20 p-6 md:p-12 container mx-auto max-w-7xl">
+            <div className="absolute bottom-0 left-0 right-0 z-20 p-6 md:p-12 lg:p-24 w-full">
                 <Link href="/work">
                     <Button variant="link" className="text-white/70 hover:text-primary p-0 mb-6">
                         <ArrowLeft className="w-4 h-4 mr-2" /> Back to Work

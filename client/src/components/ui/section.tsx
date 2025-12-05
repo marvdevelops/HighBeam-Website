@@ -11,7 +11,7 @@ interface SectionProps {
 export function Section({ id, className, children, containerClassName }: SectionProps) {
   return (
     <section id={id} className={cn("py-24 md:py-40", className)}>
-      <div className={cn("container mx-auto px-8 md:px-16 max-w-7xl", containerClassName)}>
+      <div className={cn("w-full px-8 md:px-16 lg:px-24", containerClassName)}>
         {children}
       </div>
     </section>

@@ -26,7 +26,7 @@ export function Hero() {
         />
       </motion.div>
 
-      <div className="container mx-auto px-6 md:px-12 max-w-7xl relative z-20 grid md:grid-cols-2 gap-12 items-center">
+      <div className="w-full px-6 md:px-12 lg:px-24 relative z-20 grid md:grid-cols-2 gap-12 items-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

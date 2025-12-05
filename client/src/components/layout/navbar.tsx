@@ -34,7 +34,7 @@ export function Navbar() {
         isScrolled ? "bg-black/90 backdrop-blur-md border-b border-zinc-800 py-4" : "bg-transparent py-6"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 max-w-7xl flex items-center justify-between">
+      <div className="w-full px-6 md:px-12 lg:px-24 flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2 group">
             <img 

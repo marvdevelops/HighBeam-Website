@@ -3,7 +3,7 @@ import logoImage from "@assets/Logo@5x-100_1764948626323.jpg";
 export function Footer() {
   return (
     <footer className="bg-black border-t border-zinc-900 py-12">
-      <div className="container mx-auto px-6 md:px-12 max-w-7xl">
+      <div className="w-full px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <img 
