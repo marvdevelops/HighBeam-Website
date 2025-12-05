@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/generated_images/highbeam_logo_geometric_symbol.png";
+import logoImage from "@assets/Logo@5x-100_1764948626323.jpg";
 
 const navItems = [
   { name: "Capabilities", href: "#capabilities" },
@@ -43,10 +42,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 max-w-7xl flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group" onClick={(e) => scrollToSection(e, "#")}>
-          <img src={logoImage} alt="HighBeam Logo" className="h-8 w-8 object-contain" />
-          <span className="font-display font-bold text-xl tracking-tighter text-white group-hover:text-primary transition-colors">
-            HighBeam
-          </span>
+          <img src={logoImage} alt="HighBeam" className="h-12 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
