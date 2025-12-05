@@ -16,7 +16,7 @@ export function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section ref={ref} className="relative h-screen flex items-center overflow-hidden">
       {/* Background */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
@@ -30,12 +30,12 @@ export function Hero() {
         />
       </motion.div>
 
-      <div className="w-full px-6 md:px-12 lg:px-24 relative z-20 grid md:grid-cols-2 gap-12 items-center">
+      <div className="w-full px-6 md:px-12 lg:px-24 relative z-20 grid md:grid-cols-12 items-center h-full">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-8"
+          className="space-y-6 md:col-span-8 lg:col-span-8 z-30 pt-20 md:pt-0"
         >
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter text-white uppercase">
             Turn Your <br />
@@ -43,11 +43,11 @@ export function Hero() {
             an <span className="text-primary">Experience</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
+          <p className="text-lg md:text-xl text-zinc-400 max-w-xl leading-relaxed">
             HighBeam builds interactive and immersive digital experiences that bring brands to life — transforming events, activations, and installations into moments people remember.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link href="/contact">
               <Button 
                 className="bg-primary text-primary-foreground hover:bg-white hover:text-black font-bold rounded-none px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95"
@@ -71,7 +71,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="hidden md:flex relative h-[600px] items-center justify-center"
+            className="hidden md:flex relative h-full items-center justify-center md:col-span-6 md:col-start-7 z-20 pointer-events-none"
         >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl animate-pulse opacity-50" />
             
@@ -85,12 +85,12 @@ export function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="relative z-10 w-full h-full flex items-center justify-center"
+              className="relative z-10 w-full h-[80%] flex items-center justify-center"
             >
                 <img 
                   src={vrImage} 
                   alt="Virtual Reality Experience" 
-                  className="max-h-full w-auto object-contain drop-shadow-[0_0_30px_rgba(255,211,0,0.2)]" 
+                  className="max-h-full w-auto object-contain drop-shadow-[0_0_30px_rgba(255,211,0,0.2)] scale-110 translate-x-12" 
                 />
             </motion.div>
         </motion.div>
