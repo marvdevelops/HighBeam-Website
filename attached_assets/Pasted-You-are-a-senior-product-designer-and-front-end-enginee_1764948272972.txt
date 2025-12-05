@@ -1,0 +1,441 @@
+You are a senior product designer and front-end engineer.
+
+Build a **production-ready, fully responsive marketing website** for a brand called **HighBeam**.
+
+## Tech stack
+
+- Use **React + Vite + Tailwind CSS**.
+- Organize components cleanly (e.g., `components/`, `sections/`, `pages/`).
+- Use functional components with hooks.
+- Make the layout responsive for mobile, tablet, and desktop.
+
+Assume I have a logo file named `highbeam-logo.svg`.
+
+---
+
+## Brand & Visual Direction
+
+HighBeam is a **premium experiential tech studio** that builds interactive and immersive digital experiences for events and activations.
+
+### Overall vibe
+
+- Premium but fun  
+- Futuristic and creative  
+- Clean, minimal, high contrast  
+- Feels like an experiential / interactive studio, not a corporate agency
+
+### Theme
+
+- **Dark mode as the base**.
+
+### Colors
+
+Use these as Tailwind custom colors:
+
+- `hb-black`: `#0A0A0A` (page background)
+- `hb-gray`: `#1A1A1A` (cards, surfaces)
+- `hb-yellow`: `#FFD300` (primary accent / CTA)
+- `hb-white`: `#F2F2F2` (text on dark)
+- Optional subtle blue for tiny accents: `#4D8FFF`
+
+Use yellow **sparingly but strongly** for CTAs, highlights, dividers, and hover accents.
+
+### Typography
+
+Use **Google Fonts**:
+
+- Headings: **Space Grotesk**, bold, slightly futuristic.
+- Body: **Inter**, regular/medium.
+
+Large, bold headings. Lots of breathing room. Align typography with the strong geometric character of the logo.
+
+---
+
+## Layout & Navigation
+
+Make it a **single-page site** with top navigation that scrolls smoothly to sections:
+
+- Home
+- Capabilities
+- Work
+- Process
+- About
+- For Agencies
+- Contact
+
+Sticky navbar on desktop, simple menu on mobile (hamburger that opens a full-screen or panel menu).
+
+---
+
+## Interactions & Motion
+
+- Smooth scroll to sections.
+- On hover, cards lift slightly (`translateY`, `shadow`) and yellow accent appears.
+- Buttons: subtle scale-up and glow on hover.
+- Use **subtle diagonal / beam-inspired accents** (e.g., background gradients or section dividers with angled edges inspired by the logo).
+- Page load: simple fade-in + slight upward motion for hero content (no heavy animations).
+
+Keep animations smooth and fast (~200–300ms).
+
+---
+
+## Content & Sections
+
+Use the exact brand voice and copy below, structured into appropriate sections and components. Typography hierarchy and spacing should make it feel high-end and easy to read.
+
+### 1. HERO (Home)
+
+Background: `hb-black` with a subtle dark gradient.
+
+Layout:  
+- Left: text content.  
+- Right: either an abstract animated background block (CSS gradient, subtle noise, floating shapes) or a placeholder area for future project footage.
+
+Text:
+
+Heading (H1):  
+> Turn Your Vision Into an Experience
+
+Subheading (short paragraph):  
+> HighBeam builds interactive and immersive digital experiences that bring brands to life — transforming events, activations, and installations into moments people remember.
+
+Primary CTA button:  
+> Start a Project
+
+Secondary CTA (ghost/outline button):  
+> See Our Work
+
+Buttons: primary in `hb-yellow` with black text; secondary with transparent background and white border.
+
+---
+
+### 2. WHAT WE DO (Capabilities teaser on Home)
+
+Section title:  
+> Experiences Designed to Stand Out
+
+Short intro:  
+> HighBeam creates bespoke digital experiences that spark curiosity, invite exploration, and elevate brand presence.
+
+Then show **3–4 feature cards** in a responsive grid. Each card is a dark card with a small yellow diagonal accent bar at top or corner.
+
+Use this copy (spread across the cards):
+
+- Interactive digital experiences  
+- Immersive and experiential technologies  
+- Engagement-driven systems  
+- Branded installations  
+- Creative technology development  
+
+Each card should include:
+- Title
+- One-line description (you can pull from the longer Capabilities section below and compress into 1–2 sentences).
+
+---
+
+### 3. WHY HIGHBEAM
+
+Two-column layout on desktop; stacked on mobile.
+
+Left column title:  
+> Technology That Feels Alive
+
+Paragraph:  
+> We combine imagination, engineering, and storytelling to deliver experiences that run flawlessly when it matters most.
+
+Right column: bullet list with icons or checkmarks.
+
+Bullet points:
+
+- Custom-crafted, premium-quality builds  
+- Designed for event environments  
+- Beautiful visual direction + reliable development  
+- Interactive experiences designed to engage  
+- A creative technology partner you can rely on  
+
+---
+
+### 4. HOW IT WORKS (Process teaser on Home)
+
+Use a horizontal or vertical stepper with 4 steps. Each step is a card with a number and heading.
+
+Section title:  
+> Your Vision, Built With Precision
+
+Steps with headings and short copy:
+
+1. **Discover**  
+   We explore your goals, your brand, and the emotions you want to create.
+
+2. **Design**  
+   We craft the concept, interactions, visual direction, and flow of the experience.
+
+3. **Build**  
+   We develop a polished, event-ready experience engineered to perform.
+
+4. **Launch**  
+   We support your activation end-to-end, ensuring everything works perfectly on the day it matters.
+
+---
+
+### 5. FEATURED WORK (Home preview)
+
+Section title:  
+> A Collection of Interactive Moments
+
+Create a responsive grid of 3 project cards. Each card:
+
+- Dark image placeholder area (use gradients or abstract shapes)
+- Project title
+- Short description
+
+Use these sample items:
+
+1. **Immersive Brand Showcase**  
+   A digital environment designed to spark exploration.
+
+2. **Interactive Engagement Zone**  
+   A playful experience that drew visitors deeper into the brand story.
+
+3. **Experiential Installation**  
+   A space transformed into a living digital canvas.
+
+Hover: card slightly brightens, title and description slide up a bit.
+
+Each card links (scroll) to the Work section.
+
+---
+
+### 6. CTA STRIP (bottom of Home)
+
+Full-width band with `hb-yellow` background, diagonally cut top edge, black text.
+
+Headline:  
+> Let’s Build Something Unforgettable
+
+Subheading:  
+> Tell us the experience you want to create — we’ll bring it to life.
+
+Button (black background, yellow text):  
+> Get in Touch
+
+---
+
+## CAPABILITIES SECTION (separate section, not another page)
+
+ID: `#capabilities`
+
+Section title:  
+> What We Create
+
+Intro paragraph:  
+> HighBeam designs and develops interactive and immersive digital experiences tailored to brand stories, event goals, and audience engagement. We build premium, custom-crafted experiences designed to stand out.
+
+Then show **5 capability blocks** (grid on desktop, stacked on mobile):
+
+Use this content:
+
+1. **Interactive Experiences**  
+   Digital interactions that invite exploration — touch, movement, gesture, creative input, or play. Built to capture attention and encourage engagement.
+
+2. **Immersive Technologies**  
+   Experiences that draw people into new digital or spatial environments. Perfect for storytelling, branding, and emotional impact.
+
+3. **Engagement Systems**  
+   Creative tools that transform visitors into participants — enabling expression, interaction, and deeper connection.
+
+4. **Branded Installations**  
+   Large-scale digital environments that transform physical spaces into living, interactive canvases.
+
+5. **Creative Technology Development**  
+   Concept-to-launch development for agencies, brands, and event organizers who want something unique, refined, and fully custom.
+
+At the bottom, add a line centered:
+
+> If it’s interactive, immersive, or experiential, we can build it.
+
+---
+
+## WORK SECTION
+
+ID: `#work`
+
+Section title:  
+> Work That Speaks for Itself
+
+Intro:  
+> Each experience we create blends creativity, engineering, and story. Our work turns spaces into interactive environments that move people — visually, emotionally, and digitally.
+
+Use a grid of project cards (reuse the three from Home but larger). Each card:
+
+- Image placeholder
+- Title
+- Short paragraph
+
+Use this copy per project:
+
+**Immersive Brand Showcase**  
+A multi-layered experience designed to captivate and inspire.
+
+**Digital Interaction Zone**  
+A playful, exploration-driven engagement environment.
+
+**Spatial Storytelling Installation**  
+A branded environment that transformed movement into narrative.
+
+Optionally allow each card to open a modal with the “case study” structure:
+
+- The Challenge  
+- The Vision  
+- What We Built  
+- The Result  
+
+Use this text inside the modal:
+
+**The Challenge**  
+The brand needed an experience that stood out, attracted visitors, and created meaningful interaction.
+
+**The Vision**  
+Build a digital environment that sparks curiosity and invites hands-on exploration.
+
+**What We Built**  
+A bespoke experience designed with immersive visuals, smooth interactions, and real-time engagement.
+
+**The Result**  
+Increased traffic, deeper engagement, and a memorable brand moment guests remembered long after the event.
+
+---
+
+## PROCESS SECTION
+
+ID: `#process`
+
+Section title:  
+> How We Build Experiences
+
+Intro:  
+> Experiences are crafted — not assembled. Our process blends creativity, design, engineering, and precision to turn vision into reality.
+
+Display as a vertical or horizontal timeline:
+
+- **Discover**  
+  We dive into your goals, audience, and the feeling you want people to experience.
+
+- **Design**  
+  We shape the experience — defining interactions, user flow, visual direction, and story.
+
+- **Build**  
+  We develop the experience with premium engineering and meticulous attention to detail.
+
+- **Test**  
+  We refine, optimize, and stress-test every component to ensure flawless performance during live events.
+
+- **Launch**  
+  We assist with setup, deployment, and on-site execution, ensuring everything works exactly as intended.
+
+Use icons and a connecting line to visually show progression.
+
+---
+
+## ABOUT SECTION
+
+ID: `#about`
+
+Section title:  
+> About HighBeam
+
+Intro:  
+> HighBeam is a tech studio with a creative soul. We build interactive and immersive digital experiences that spark curiosity and bring stories to life.
+
+Subheading:  
+> Our Belief
+
+Paragraph:  
+> Experiences are how modern brands speak. Interaction is the new attraction.
+
+Subheading:  
+> Our Approach
+
+Paragraph:  
+> We blend imagination and engineering to create experiential moments that elevate brand presence.
+
+Bulleted values:
+
+- Craft over shortcuts  
+- Story over static visuals  
+- Emotion over complexity  
+- Quality over quantity  
+
+Subheading:  
+> Our Promise
+
+Paragraph:  
+> If you want an experience that stands out, we’ll help you build something unforgettable.
+
+Optionally add a small team or “studio” section placeholder.
+
+---
+
+## FOR AGENCIES SECTION
+
+ID: `#agencies`
+
+Section title:  
+> For Agencies
+
+Intro:  
+> HighBeam partners with event, creative, and marketing agencies to power unforgettable experiences behind the scenes. We act as your creative technology team — elevating your concepts with premium digital execution.
+
+Subheading:  
+> Why Agencies Work With Us
+
+Bullets:
+
+- White-label or co-branded builds  
+- Fast, flexible collaboration  
+- Reliable engineering for high-pressure events  
+- Pitch support & concept visualization  
+- Premium-quality custom development  
+
+Closing line:  
+> If your client wants something interactive, immersive, or bold, we’ll help you bring it to life.
+
+---
+
+## CONTACT SECTION
+
+ID: `#contact`
+
+Section title:  
+> Let’s Build Your Next Experience
+
+Intro:  
+> Tell us about your event, your brand, and the feeling you want people to remember. We’ll help bring the experience to life.
+
+Form fields:
+
+- Name  
+- Company  
+- Email  
+- Phone (optional)  
+- Project Type / Vision (textarea or select)  
+- Event Date  
+- Project Description (textarea)  
+- Budget Range (select)  
+
+Submit button:
+> Send Inquiry
+
+On submit, show a friendly confirmation message.
+
+---
+
+## GENERAL UX REQUIREMENTS
+
+- Use a **max-width container** and generous padding; nothing should feel cramped.
+- Maintain consistent spacing scale (e.g., Tailwind `space-y` / `gap`).
+- Make sure text contrast meets accessibility guidelines.
+- Support both desktop and mobile navigation elegantly.
+- The site should feel like a **modern, premium studio** website, not a generic template.
+
+Deliver clean, well-structured code with clear component names so it’s easy to extend later.
