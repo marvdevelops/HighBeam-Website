@@ -5,6 +5,10 @@ import project3 from "@assets/generated_images/architectural_light_installation_
 import project4 from "@assets/generated_images/holographic_fashion_runway_event.png";
 import project5 from "@assets/generated_images/interactive_museum_exhibit_with_projection_mapping.png";
 import project6 from "@assets/generated_images/vr_gaming_arena_event.png";
+import detail1 from "@assets/generated_images/detail_of_immersive_light_installation.png";
+import detail2 from "@assets/generated_images/hands_on_interactive_surface.png";
+import detail3 from "@assets/generated_images/wide_architectural_light_beam.png";
+import detail4 from "@assets/generated_images/holographic_texture_detail.png";
 
 export const projects = [
   {
@@ -13,6 +17,7 @@ export const projects = [
     shortDescription: "A multi-layered experience designed to captivate and inspire.",
     description: "A digital environment designed to spark exploration.",
     image: project1,
+    images: [project1, detail1, detail3],
     details: {
         challenge: "The brand needed an experience that stood out, attracted visitors, and created meaningful interaction.",
         vision: "Build a digital environment that sparks curiosity and invites hands-on exploration.",
@@ -26,6 +31,7 @@ export const projects = [
     shortDescription: "A playful, exploration-driven engagement environment.",
     description: "A playful experience that drew visitors deeper into the brand story.",
     image: project2,
+    images: [project2, detail2, detail1],
     details: {
         challenge: "Create a high-energy zone that encourages participation and social sharing.",
         vision: "Gamify the brand experience to make it fun and accessible for all ages.",
@@ -39,6 +45,7 @@ export const projects = [
     shortDescription: "A branded environment that transformed movement into narrative.",
     description: "A space transformed into a living digital canvas.",
     image: project3,
+    images: [project3, detail3, detail4],
     details: {
         challenge: "Turn a passive hallway into an active storytelling journey.",
         vision: "Use motion tracking to trigger narrative elements as guests walk through the space.",
@@ -52,6 +59,7 @@ export const projects = [
     shortDescription: "The future of fashion runway events.",
     description: "A holographic runway experience for a high-end fashion brand.",
     image: project4,
+    images: [project4, detail4, detail1],
     details: {
         challenge: "Create a runway show that feels futuristic and pushes the boundaries of traditional fashion events.",
         vision: "Integrate holographic projections with live models to create a mixed-reality experience.",
@@ -65,6 +73,7 @@ export const projects = [
     shortDescription: "Touching history through digital projection.",
     description: "An interactive projection mapping exhibit.",
     image: project5,
+    images: [project5, detail2, detail3],
     details: {
         challenge: "Make historical artifacts engaging for a younger audience.",
         vision: "Allow visitors to interact with sculptures and reveal hidden layers of history.",
@@ -78,6 +87,7 @@ export const projects = [
     shortDescription: "Competitive esports in virtual reality.",
     description: "A high-energy VR esports arena.",
     image: project6,
+    images: [project6, detail1, detail2],
     details: {
         challenge: "Design a space that feels like entering a video game.",
         vision: "Immerse players in a sci-fi environment from the moment they step in.",
