@@ -1,0 +1,85 @@
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import heroBg from "@assets/generated_images/dark_abstract_futuristic_background_with_subtle_yellow_light_beams.png";
+
+export function Hero() {
+  return (
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
+        <img 
+          src={heroBg} 
+          alt="Background" 
+          className="w-full h-full object-cover opacity-60"
+        />
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 max-w-7xl relative z-20 grid md:grid-cols-2 gap-12 items-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="space-y-8"
+        >
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tighter text-white">
+            Turn Your <br />
+            <span className="text-stroke">Vision</span> Into <br />
+            an <span className="text-primary">Experience</span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
+            HighBeam builds interactive and immersive digital experiences that bring brands to life — transforming events, activations, and installations into moments people remember.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Button 
+              className="bg-primary text-primary-foreground hover:bg-white hover:text-black font-bold rounded-none px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95"
+              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Start a Project
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-white/20 text-white hover:bg-white/10 hover:border-white font-medium rounded-none px-8 py-6 text-lg transition-all"
+              onClick={() => document.querySelector('#work')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              See Our Work
+            </Button>
+          </div>
+        </motion.div>
+
+        {/* Abstract visual element on the right */}
+        <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="hidden md:block relative h-[600px]"
+        >
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl animate-pulse" />
+            {/* We could add a 3D element or more complex graphic here later */}
+            <div className="relative h-full w-full border border-white/5 bg-white/5 backdrop-blur-sm p-8 clip-diagonal-top flex items-center justify-center">
+                <div className="text-center space-y-4">
+                    <div className="w-24 h-1 bg-primary mx-auto mb-8" />
+                    <p className="font-mono text-xs text-zinc-500 uppercase tracking-[0.3em]">System Status</p>
+                    <p className="font-display text-4xl font-bold text-white">ONLINE</p>
+                    <p className="font-mono text-xs text-primary uppercase tracking-[0.3em]">Ready to Deploy</p>
+                </div>
+            </div>
+        </motion.div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+      >
+        <span className="text-[10px] uppercase tracking-widest text-zinc-500">Scroll</span>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent" />
+      </motion.div>
+    </section>
+  );
+}
