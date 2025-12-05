@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroBg from "@assets/generated_images/dark_abstract_futuristic_background_with_subtle_yellow_light_beams.png";
+import heroVideo from "@assets/generated_videos/abstract_dark_space_background_with_subtle_stars_and_nebula.mp4";
 import { useRef } from "react";
 
 export function Hero() {
@@ -19,9 +19,12 @@ export function Hero() {
       {/* Background */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
-        <img 
-          src={heroBg} 
-          alt="Background" 
+        <video 
+          src={heroVideo} 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
           className="w-full h-full object-cover opacity-60"
         />
       </motion.div>

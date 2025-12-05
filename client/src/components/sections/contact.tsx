@@ -23,9 +23,7 @@ const formSchema = z.object({
   email: z.string().email({ message: "Invalid email address." }),
   phone: z.string().optional(),
   projectType: z.string({ required_error: "Please select a project type." }),
-  eventDate: z.string().min(1, { message: "Event date is required." }),
   description: z.string().min(10, { message: "Please describe your project." }),
-  budget: z.string({ required_error: "Please select a budget range." }),
 });
 
 export function Contact() {
@@ -37,16 +35,16 @@ export function Contact() {
       company: "",
       email: "",
       phone: "",
-      eventDate: "",
       description: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    window.location.href = `mailto:info@highbeam.digital?subject=Inquiry from ${values.name} - ${values.company}&body=Name: ${values.name}%0D%0ACompany: ${values.company}%0D%0AEmail: ${values.email}%0D%0APhone: ${values.phone || 'N/A'}%0D%0AProject Type: ${values.projectType}%0D%0A%0D%0ADescription:%0D%0A${values.description}`;
     toast({
-      title: "Inquiry Sent",
-      description: "Thanks for reaching out! We'll get back to you shortly.",
+      title: "Opening Email Client",
+      description: "Drafting your inquiry to info@highbeam.digital",
     });
     form.reset();
   }
@@ -152,44 +150,7 @@ export function Contact() {
                         </FormItem>
                     )}
                     />
-                    <FormField
-                    control={form.control}
-                    name="eventDate"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel className="text-zinc-300">Event Date / Timeline</FormLabel>
-                        <FormControl>
-                            <Input placeholder="e.g. October 2025" {...field} className="bg-black border-zinc-800 text-white h-12 focus-visible:ring-primary" />
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
                 </div>
-                
-                <FormField
-                control={form.control}
-                name="budget"
-                render={({ field }) => (
-                    <FormItem>
-                    <FormLabel className="text-zinc-300">Budget Range</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                        <SelectTrigger className="bg-black border-zinc-800 text-white h-12 focus:ring-primary">
-                            <SelectValue placeholder="Select budget" />
-                        </SelectTrigger>
-                        </FormControl>
-                        <SelectContent className="bg-black border-zinc-800 text-white">
-                        <SelectItem value="10-30k">$10k - $30k</SelectItem>
-                        <SelectItem value="30-50k">$30k - $50k</SelectItem>
-                        <SelectItem value="50-100k">$50k - $100k</SelectItem>
-                        <SelectItem value="100k+">$100k+</SelectItem>
-                        </SelectContent>
-                    </Select>
-                    <FormMessage />
-                    </FormItem>
-                )}
-                />
 
                 <FormField
                 control={form.control}
