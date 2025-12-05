@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import heroVideo from "@assets/generated_videos/abstract_dark_space_background_with_subtle_stars_and_nebula.mp4";
+import vrImage from "@assets/virtual-reality_1764951052102.png";
 import { useRef } from "react";
 
 export function Hero() {
@@ -65,22 +66,33 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Abstract visual element on the right */}
+        {/* Visual element on the right */}
         <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="hidden md:block relative h-[600px]"
+            className="hidden md:flex relative h-[600px] items-center justify-center"
         >
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl animate-pulse" />
-            <div className="relative h-full w-full border border-white/5 bg-white/5 backdrop-blur-sm p-8 clip-diagonal-top flex items-center justify-center">
-                <div className="text-center space-y-4">
-                    <div className="w-24 h-1 bg-primary mx-auto mb-8" />
-                    <p className="font-mono text-xs text-zinc-500 uppercase tracking-[0.3em]">System Status</p>
-                    <p className="font-display text-4xl font-bold text-white">ONLINE</p>
-                    <p className="font-mono text-xs text-primary uppercase tracking-[0.3em]">Ready to Deploy</p>
-                </div>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl animate-pulse opacity-50" />
+            
+            {/* Image Container with floating effect */}
+            <motion.div
+              animate={{ 
+                y: [0, -20, 0],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="relative z-10 w-full h-full flex items-center justify-center"
+            >
+                <img 
+                  src={vrImage} 
+                  alt="Virtual Reality Experience" 
+                  className="max-h-full w-auto object-contain drop-shadow-[0_0_30px_rgba(255,211,0,0.2)]" 
+                />
+            </motion.div>
         </motion.div>
       </div>
 
