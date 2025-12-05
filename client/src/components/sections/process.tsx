@@ -1,5 +1,6 @@
 import { Section } from "@/components/ui/section";
 import { motion } from "framer-motion";
+import bgImage from "@assets/generated_images/abstract_schematic_lines_and_nodes.png";
 
 const steps = [
   {
@@ -26,8 +27,14 @@ const steps = [
 
 export function Process() {
   return (
-    <Section id="process" className="bg-zinc-950">
-      <div className="max-w-3xl mb-16">
+    <Section id="process" className="bg-zinc-950 relative overflow-hidden">
+       {/* Background Image */}
+      <div className="absolute inset-0 z-0 opacity-30">
+        <div className="absolute inset-0 bg-black/80" />
+        <img src={bgImage} alt="" className="w-full h-full object-cover" />
+      </div>
+
+      <div className="max-w-3xl mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">How We Build Experiences</h2>
         <p className="text-xl text-zinc-400 leading-relaxed">
           Experiences are crafted — not assembled. Our process blends creativity, design, engineering, and precision to turn vision into reality.

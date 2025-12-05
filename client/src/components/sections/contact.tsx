@@ -15,6 +15,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import bgImage from "@assets/generated_images/single_beam_of_light_in_darkness.png";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name is required." }),
@@ -51,8 +52,14 @@ export function Contact() {
   }
 
   return (
-    <Section id="contact" className="bg-black pb-32">
-      <div className="max-w-4xl mx-auto">
+    <Section id="contact" className="bg-black pb-32 relative overflow-hidden">
+       {/* Background Image */}
+       <div className="absolute inset-0 z-0 opacity-50">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+        <img src={bgImage} alt="" className="w-full h-full object-cover" />
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Let’s Build Your Next Experience</h2>
             <p className="text-xl text-zinc-400">

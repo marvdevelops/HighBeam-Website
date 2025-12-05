@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Handshake } from "lucide-react";
+import bgImage from "@assets/generated_images/dark_fluid_abstract_shapes.png";
 
 const benefits = [
   "White-label or co-branded builds",
@@ -12,8 +13,14 @@ const benefits = [
 
 export function Agencies() {
   return (
-    <Section id="agencies" className="bg-zinc-950">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+    <Section id="agencies" className="bg-zinc-950 relative overflow-hidden">
+       {/* Background Image */}
+      <div className="absolute inset-0 z-0 opacity-40">
+        <div className="absolute inset-0 bg-zinc-950/90" />
+        <img src={bgImage} alt="" className="w-full h-full object-cover" />
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
         <div className="order-2 md:order-1">
             <div className="grid gap-4">
                 {benefits.map((benefit, index) => (

@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import bgImage from "@assets/generated_images/subtle_dark_hexagonal_mesh_texture.png";
 
 const capabilities = [
   {
@@ -27,8 +28,14 @@ const capabilities = [
 
 export function Capabilities() {
   return (
-    <Section id="capabilities" className="bg-zinc-950">
-      <div className="max-w-3xl mb-16">
+    <Section id="capabilities" className="bg-zinc-950 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0 opacity-40">
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-transparent to-zinc-950" />
+        <img src={bgImage} alt="" className="w-full h-full object-cover" />
+      </div>
+      
+      <div className="max-w-3xl mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">What We Create</h2>
         <p className="text-xl text-zinc-400 leading-relaxed">
           HighBeam designs and develops interactive and immersive digital experiences tailored to brand stories, event goals, and audience engagement. We build premium, custom-crafted experiences designed to stand out.
