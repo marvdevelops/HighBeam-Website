@@ -35,7 +35,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-6 md:col-span-8 lg:col-span-8 z-30 pt-20 md:pt-0"
+          className="space-y-6 md:col-span-9 lg:col-span-8 z-30 pt-20 md:pt-0"
         >
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter text-white uppercase">
             Turn Your <br />
@@ -66,14 +66,14 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Visual element on the right */}
+        {/* Visual element - Absolute Positioned to ensure it's next to text */}
         <motion.div 
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="hidden md:flex relative h-full items-center justify-center md:col-span-6 md:col-start-7 z-20 pointer-events-none"
+            className="hidden md:block absolute right-0 top-0 bottom-0 w-[45%] z-20 pointer-events-none overflow-hidden"
         >
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl animate-pulse opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-l from-black/20 to-transparent z-0" />
             
             {/* Image Container with floating effect */}
             <motion.div
@@ -85,12 +85,12 @@ export function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="relative z-10 w-full h-[80%] flex items-center justify-center"
+              className="relative z-10 w-full h-full flex items-center justify-start"
             >
                 <img 
                   src={vrImage} 
                   alt="Virtual Reality Experience" 
-                  className="max-h-full w-auto object-contain drop-shadow-[0_0_30px_rgba(255,211,0,0.2)] scale-110 translate-x-12" 
+                  className="h-[85%] w-auto object-contain drop-shadow-[0_0_50px_rgba(255,211,0,0.15)] -ml-12" 
                 />
             </motion.div>
         </motion.div>
