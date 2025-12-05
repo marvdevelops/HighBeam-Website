@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -11,12 +12,13 @@ export function CtaStrip() {
         <p className="text-xl md:text-2xl text-black/80 mb-10 max-w-2xl mx-auto">
           Tell us the experience you want to create — we’ll bring it to life.
         </p>
-        <Button 
-          className="bg-black text-white hover:bg-white hover:text-black font-bold rounded-none px-10 py-8 text-lg border-0"
-          onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-        >
-          Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
+        <Link href="/contact">
+          <Button 
+            className="bg-black text-white hover:bg-white hover:text-black font-bold rounded-none px-10 py-8 text-lg border-0"
+          >
+            Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </Link>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import heroBg from "@assets/generated_images/dark_abstract_futuristic_background_with_subtle_yellow_light_beams.png";
 
 export function Hero() {
@@ -34,19 +34,21 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button 
-              className="bg-primary text-primary-foreground hover:bg-white hover:text-black font-bold rounded-none px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95"
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Start a Project
-            </Button>
-            <Button 
-              variant="outline" 
-              className="border-white/20 text-white hover:bg-white/10 hover:border-white font-medium rounded-none px-8 py-6 text-lg transition-all"
-              onClick={() => document.querySelector('#work')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              See Our Work
-            </Button>
+            <Link href="/contact">
+              <Button 
+                className="bg-primary text-primary-foreground hover:bg-white hover:text-black font-bold rounded-none px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95"
+              >
+                Start a Project
+              </Button>
+            </Link>
+            <Link href="/work">
+              <Button 
+                variant="outline" 
+                className="border-white/20 text-white hover:bg-white/10 hover:border-white font-medium rounded-none px-8 py-6 text-lg transition-all"
+              >
+                See Our Work
+              </Button>
+            </Link>
           </div>
         </motion.div>
 
@@ -58,7 +60,6 @@ export function Hero() {
             className="hidden md:block relative h-[600px]"
         >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl animate-pulse" />
-            {/* We could add a 3D element or more complex graphic here later */}
             <div className="relative h-full w-full border border-white/5 bg-white/5 backdrop-blur-sm p-8 clip-diagonal-top flex items-center justify-center">
                 <div className="text-center space-y-4">
                     <div className="w-24 h-1 bg-primary mx-auto mb-8" />

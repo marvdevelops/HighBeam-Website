@@ -1,0 +1,184 @@
+You are a senior product designer and full-stack engineer.
+
+Build a **multi-page, production-ready marketing website** for a brand called **HighBeam** using the following requirements.
+
+========================================================
+TECH STACK
+========================================================
+- React + Vite
+- React Router for multi-page navigation
+- Tailwind CSS for styling
+- Use clean folder structure:
+  /src
+    /components
+    /pages
+    /sections
+    /layouts
+    /assets (logo)
+- Fully responsive (mobile, tablet, desktop)
+
+Use `highbeam-logo.svg` as the brand logo.
+
+========================================================
+BRAND THEME & UI STYLE
+========================================================
+HighBeam is a premium experiential tech studio.
+
+Visual direction:
+- **Dark mode** primary theme
+- Background: #0A0A0A
+- Surface: #1A1A1A
+- Accent: #FFD300 (HighBeam Yellow)
+- Text: #F2F2F2
+- Optional micro-accent: #4D8FFF
+
+Typography:
+- Headings: Space Grotesk (bold, geometric, futuristic)
+- Body: Inter
+
+Layout:
+- Spacious, minimal, premium
+- Strong contrast
+- Diagonal / beam-inspired accents that match the logo
+- Subtle animations (fade, slide, hover lift)
+
+========================================================
+SITE MAP (MULTI-PAGE)
+========================================================
+
+Create these pages:
+
+1. Home (/)
+2. Capabilities (/capabilities)
+3. Work (/work)
+4. Project Detail (/work/:slug)
+5. Process (/process)
+6. About (/about)
+7. For Agencies (/agencies)
+8. Contact (/contact)
+
+Use React Router to link between pages.
+
+========================================================
+PAGE CONTENT
+========================================================
+
+Use the exact copy below for each page.
+
+========================================================
+HOME PAGE
+========================================================
+Hero:
+H1: Turn Your Vision Into an Experience
+Subheading:
+HighBeam builds interactive and immersive digital experiences that bring brands to life — transforming events, activations, and installations into moments people remember.
+Buttons: Start a Project (yellow) + See Our Work (outline)
+
+Sections:
+- What We Do (cards)
+- Why HighBeam (2-column)
+- Process Preview (4 steps)
+- Featured Work (3 project cards)
+- CTA Banner (yellow)
+
+========================================================
+CAPABILITIES PAGE
+========================================================
+Title: What We Create
+Intro:
+HighBeam designs and develops interactive and immersive digital experiences tailored to brand stories, event goals, and audience engagement.
+
+5 capabilities:
+- Interactive Experiences
+- Immersive Technologies
+- Engagement Systems
+- Branded Installations
+- Creative Technology Development
+
+Bottom line:
+If it’s interactive, immersive, or experiential, we can build it.
+
+========================================================
+WORK PAGE
+========================================================
+Grid of projects.
+
+Each card:
+- Image placeholder
+- Title
+- Short description
+Link to individual project details using `/work/:slug`.
+
+========================================================
+PROJECT DETAIL PAGE
+========================================================
+Template shows:
+- Full-width hero image
+- The Challenge
+- The Vision
+- What We Built
+- The Result
+
+Use placeholder content for now.
+
+========================================================
+PROCESS PAGE
+========================================================
+Title: How We Build Experiences
+Include steps:
+Discover
+Design
+Build
+Test
+Launch
+
+========================================================
+ABOUT PAGE
+========================================================
+Title: About HighBeam
+Use the About content provided earlier (import from prompt).
+
+========================================================
+FOR AGENCIES PAGE
+========================================================
+Title: For Agencies
+Include reasons why agencies partner with HighBeam.
+
+========================================================
+CONTACT PAGE
+========================================================
+Title: Let’s Build Your Next Experience
+Form fields:
+Name, Company, Email, Phone, Project Vision, Event Date, Budget Range, Message.
+
+========================================================
+INTERACTIONS / MOTION
+========================================================
+- Smooth scroll to anchors
+- Cards lift on hover with yellow glow
+- Buttons animate gently on hover
+- Page transitions: fade-in
+- Section titles slide up on scroll
+
+========================================================
+REQUIREMENTS
+========================================================
+- Create clean components for reuse
+- Use responsive grid layouts
+- Ensure strong accessibility & semantic HTML
+- Final result must look like a **premium creative tech studio**
+
+========================================================
+OUTPUT DELIVERABLE
+========================================================
+Generate:
+- Full React/Tailwind project
+- All pages
+- All components
+- Routing
+- Styles
+- Placeholder assets
+- Animations
+- Consistent layout wrapper
+
+The final site should be ready to run immediately via `npm install` and `npm run dev`.
