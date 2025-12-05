@@ -6,7 +6,11 @@ export function Footer() {
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src={logoImage} alt="HighBeam" className="h-8 w-auto object-contain" />
+            <img 
+              src={logoImage} 
+              alt="HighBeam" 
+              className="h-8 w-auto object-contain mix-blend-screen invert hue-rotate-180" 
+            />
           </div>
           
           <div className="text-zinc-500 text-sm">

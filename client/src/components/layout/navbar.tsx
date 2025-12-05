@@ -42,7 +42,11 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 max-w-7xl flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group" onClick={(e) => scrollToSection(e, "#")}>
-          <img src={logoImage} alt="HighBeam" className="h-12 w-auto object-contain" />
+          <img 
+            src={logoImage} 
+            alt="HighBeam" 
+            className="h-12 w-auto object-contain mix-blend-screen invert hue-rotate-180" 
+          />
         </a>
 
         {/* Desktop Nav */}
