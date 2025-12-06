@@ -5,6 +5,10 @@ import project3 from "@assets/generated_images/architectural_light_installation_
 import dfiImage from "@assets/golden_voice_app_1764994852180.png";
 import fifaImage1 from "@assets/Gemini_Generated_Image_oidr42oidr42oidr_(1)_1764995151473.png";
 import fifaImage2 from "@assets/Gemini_Generated_Image_vo6u3qvo6u3qvo6u_1764995151474.png";
+import ncsaImage1 from "@assets/Gemini_Generated_Image_6693mj6693mj6693_1764995345872.png";
+import ncsaImage2 from "@assets/Gemini_Generated_Image_eg3m1qeg3m1qeg3m_1764995345873.png";
+import ncsaImage3 from "@assets/Gemini_Generated_Image_oqm6a0oqm6a0oqm6_1764995345873.png";
+import ncsaImage4 from "@assets/Gemini_Generated_Image_v4wx7zv4wx7zv4wx_1764995345873.png";
 import detail1 from "@assets/generated_images/detail_of_immersive_light_installation.png";
 import detail2 from "@assets/generated_images/hands_on_interactive_surface.png";
 import detail3 from "@assets/generated_images/wide_architectural_light_beam.png";
@@ -16,8 +20,8 @@ export const projects = [
     title: "Feedback Wall: Real-Time Strategic Visualization for NCSA Qatar",
     shortDescription: "A high-level, real-time visualization tool designed for strategic forums.",
     description: "We partnered with the National Cybersecurity Agency (NCSA) in Qatar to develop and deploy the Feedback Wall installation—a high-level, real-time visualization tool designed for strategic forums.\n\nThis system transcends traditional event engagement by transforming authenticated participant input into actionable, visual data. Attendees used a dedicated 21-inch touchscreen kiosk to convey their focused insights. The submissions were then instantly aggregated and broadcast onto a monumental LED Feedback Wall, generating a dynamic, real-time mosaic that mapped the collective intelligence of the forum.",
-    image: project1,
-    images: [project1, detail1, detail3],
+    image: ncsaImage3,
+    images: [ncsaImage1, ncsaImage2, ncsaImage3],
     deliverables: [
       {
         title: "Secure Engagement Flow",
