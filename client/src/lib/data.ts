@@ -2,9 +2,7 @@ import { Link, useLocation } from "wouter";
 import project1 from "@assets/generated_images/abstract_immersive_digital_art_installation_with_neon_lights.png";
 import project2 from "@assets/generated_images/interactive_digital_engagement_zone_with_touchscreens.png";
 import project3 from "@assets/generated_images/architectural_light_installation_in_a_dark_space.png";
-import project4 from "@assets/generated_images/holographic_fashion_runway_event.png";
-import project5 from "@assets/generated_images/interactive_museum_exhibit_with_projection_mapping.png";
-import project6 from "@assets/generated_images/vr_gaming_arena_event.png";
+import dfiImage from "@assets/golden_voice_app_1764994852180.png";
 import detail1 from "@assets/generated_images/detail_of_immersive_light_installation.png";
 import detail2 from "@assets/generated_images/hands_on_interactive_surface.png";
 import detail3 from "@assets/generated_images/wide_architectural_light_beam.png";
@@ -12,87 +10,45 @@ import detail4 from "@assets/generated_images/holographic_texture_detail.png";
 
 export const projects = [
   {
-    slug: "immersive-brand-showcase",
-    title: "Immersive Brand Showcase",
-    shortDescription: "A multi-layered experience designed to captivate and inspire.",
-    description: "A digital environment designed to spark exploration.",
+    slug: "feedback-wall-ncsa",
+    title: "Feedback Wall: Real-Time Strategic Visualization",
+    shortDescription: "A high-level, real-time visualization tool designed for strategic forums.",
+    description: "We partnered with the National Cybersecurity Agency (NCSA) in Qatar to develop and deploy the Feedback Wall installation—a high-level, real-time visualization tool designed for strategic forums.",
     image: project1,
     images: [project1, detail1, detail3],
     details: {
-        challenge: "The brand needed an experience that stood out, attracted visitors, and created meaningful interaction.",
-        vision: "Build a digital environment that sparks curiosity and invites hands-on exploration.",
-        built: "A bespoke experience designed with immersive visuals, smooth interactions, and real-time engagement.",
-        result: "Increased traffic, deeper engagement, and a memorable brand moment guests remembered long after the event."
+        challenge: "Transform authenticated participant input into actionable, visual data.",
+        vision: "Generate a dynamic, real-time mosaic that mapped the collective intelligence of the forum.",
+        built: "Dedicated 21-inch touchscreen kiosk instantly aggregated and broadcast onto a monumental LED Feedback Wall.",
+        result: "Elevated the perceived sophistication of the NCSA event, fostering a culture of active contribution and collaborative security strategy."
     }
   },
   {
-    slug: "digital-interaction-zone",
-    title: "Digital Interaction Zone",
-    shortDescription: "A playful, exploration-driven engagement environment.",
-    description: "A playful experience that drew visitors deeper into the brand story.",
+    slug: "fifa-arab-cup-fan-wall",
+    title: "FIFA Arab Cup Fan Wall",
+    shortDescription: "Personalized experiential marketing for the FIFA Arab Cup Fan Zone.",
+    description: "Highbeam conceptualized and executed the FIFA Arab Cup Fan Wall, an immersive, large-scale installation designed to maximize fan excitement and social sharing within the Fan Zone.",
     image: project2,
     images: [project2, detail2, detail1],
     details: {
-        challenge: "Create a high-energy zone that encourages participation and social sharing.",
-        vision: "Gamify the brand experience to make it fun and accessible for all ages.",
-        built: "Touch-responsive interfaces connected to large-scale LED displays with real-time feedback.",
-        result: "Over 10,000 interactions in 3 days and massive social media amplification."
+        challenge: "Maximize fan excitement and social sharing within the Fan Zone.",
+        vision: "Using a mobile web app, visitors submitted their name, team, and number, which was instantly rendered as the back of a football jersey.",
+        built: "Responsive mobile web platform with a robust admin approval flow, displaying custom jerseys on a massive Fan Wall in real-time.",
+        result: "Created a highly shareable, branded experience that amplified the event's reach across social media."
     }
   },
   {
-    slug: "spatial-storytelling-installation",
-    title: "Spatial Storytelling Installation",
-    shortDescription: "A branded environment that transformed movement into narrative.",
-    description: "A space transformed into a living digital canvas.",
-    image: project3,
-    images: [project3, detail3, detail4],
+    slug: "dfi-golden-voice-studio",
+    title: "DFI Golden Voice Studio",
+    shortDescription: "Immersive voiceover kiosk celebrating the art of dubbing.",
+    description: "Highbeam partnered with the Doha Film Institute (DFI) to create the 'Golden Voice' Kiosk Installation, a highly engaging experiential piece celebrating the art of dubbing and voice acting.",
+    image: dfiImage,
+    images: [dfiImage, detail4, detail2],
     details: {
-        challenge: "Turn a passive hallway into an active storytelling journey.",
-        vision: "Use motion tracking to trigger narrative elements as guests walk through the space.",
-        built: "Lidar-based tracking system integrated with projection mapping and spatial audio.",
-        result: "A seamless blend of physical and digital that immersed guests completely in the brand story."
-    }
-  },
-  {
-    slug: "holographic-fashion-show",
-    title: "Holographic Fashion Show",
-    shortDescription: "The future of fashion runway events.",
-    description: "A holographic runway experience for a high-end fashion brand.",
-    image: project4,
-    images: [project4, detail4, detail1],
-    details: {
-        challenge: "Create a runway show that feels futuristic and pushes the boundaries of traditional fashion events.",
-        vision: "Integrate holographic projections with live models to create a mixed-reality experience.",
-        built: "Custom holographic projection system synchronized with lighting and music.",
-        result: "A viral fashion moment that was shared across major fashion publications."
-    }
-  },
-  {
-    slug: "interactive-museum-exhibit",
-    title: "Interactive Museum Exhibit",
-    shortDescription: "Touching history through digital projection.",
-    description: "An interactive projection mapping exhibit.",
-    image: project5,
-    images: [project5, detail2, detail3],
-    details: {
-        challenge: "Make historical artifacts engaging for a younger audience.",
-        vision: "Allow visitors to interact with sculptures and reveal hidden layers of history.",
-        built: "Touch-sensitive projection mapping system that responds to visitor gestures.",
-        result: "Increased visitor dwell time by 300% and received rave reviews."
-    }
-  },
-  {
-    slug: "vr-gaming-arena",
-    title: "VR Gaming Arena",
-    shortDescription: "Competitive esports in virtual reality.",
-    description: "A high-energy VR esports arena.",
-    image: project6,
-    images: [project6, detail1, detail2],
-    details: {
-        challenge: "Design a space that feels like entering a video game.",
-        vision: "Immerse players in a sci-fi environment from the moment they step in.",
-        built: "Custom LED lighting, sound design, and VR stations integrated into the architecture.",
-        result: "Sold-out events for the first 6 months and became a hub for local gamers."
+        challenge: "Create a highly engaging experiential piece celebrating the art of dubbing and voice acting.",
+        vision: "A creative journey where users select a clip, record their own voiceover in a soundproofed environment, and instantly receive a processed video.",
+        built: "Large-format touchscreen kiosk with simultaneous video playback and high-quality audio recording, featuring a seamless bilingual (English/Arabic) UX/UI.",
+        result: "Created a personalized, high-value digital takeaway that drove user participation and organic social media sharing."
     }
   }
 ];
