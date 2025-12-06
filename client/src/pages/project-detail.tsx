@@ -80,26 +80,43 @@ export default function ProjectDetailPage() {
         </div>
 
         <Section className="bg-black">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-24">
-                <div className="space-y-12">
-                    <div>
-                        <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">The Challenge</h3>
-                        <p className="text-zinc-300 text-lg leading-relaxed">{project.details.challenge}</p>
-                    </div>
-                    <div>
-                        <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">The Vision</h3>
-                        <p className="text-zinc-300 text-lg leading-relaxed">{project.details.vision}</p>
-                    </div>
-                </div>
-                <div className="space-y-12">
-                    <div>
-                        <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">What We Built</h3>
-                        <p className="text-zinc-300 text-lg leading-relaxed">{project.details.built}</p>
-                    </div>
-                    <div>
-                        <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">The Result</h3>
-                        <p className="text-zinc-300 text-lg leading-relaxed">{project.details.result}</p>
-                    </div>
+            <div className="max-w-4xl">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 uppercase tracking-tight">Project Overview</h2>
+                <p className="text-xl text-zinc-300 leading-relaxed whitespace-pre-wrap mb-16">
+                    {project.description}
+                </p>
+
+                <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-8 border-b border-zinc-800 pb-4">Key Deliverables</h3>
+                
+                <div className="grid gap-12">
+                    {project.deliverables && project.deliverables.map((item, index) => (
+                        <div key={index} className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                            <h4 className="text-white font-bold text-lg uppercase">{item.title}</h4>
+                            <p className="text-zinc-400 text-lg leading-relaxed">{item.description}</p>
+                        </div>
+                    ))}
+                    
+                    {/* Fallback for old data structure if needed */}
+                    {!project.deliverables && project.details && (
+                        <>
+                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                                <h4 className="text-white font-bold text-lg uppercase">The Challenge</h4>
+                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.challenge}</p>
+                            </div>
+                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                                <h4 className="text-white font-bold text-lg uppercase">The Vision</h4>
+                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.vision}</p>
+                            </div>
+                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                                <h4 className="text-white font-bold text-lg uppercase">What We Built</h4>
+                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.built}</p>
+                            </div>
+                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
+                                <h4 className="text-white font-bold text-lg uppercase">The Result</h4>
+                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.result}</p>
+                            </div>
+                        </>
+                    )}
                 </div>
             </div>
         </Section>
