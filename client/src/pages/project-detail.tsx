@@ -95,28 +95,6 @@ export default function ProjectDetailPage() {
                             <p className="text-zinc-400 text-lg leading-relaxed">{item.description}</p>
                         </div>
                     ))}
-                    
-                    {/* Fallback for old data structure if needed */}
-                    {!project.deliverables && project.details && (
-                        <>
-                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
-                                <h4 className="text-white font-bold text-lg uppercase">The Challenge</h4>
-                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.challenge}</p>
-                            </div>
-                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
-                                <h4 className="text-white font-bold text-lg uppercase">The Vision</h4>
-                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.vision}</p>
-                            </div>
-                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
-                                <h4 className="text-white font-bold text-lg uppercase">What We Built</h4>
-                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.built}</p>
-                            </div>
-                             <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-12">
-                                <h4 className="text-white font-bold text-lg uppercase">The Result</h4>
-                                <p className="text-zinc-400 text-lg leading-relaxed">{project.details.result}</p>
-                            </div>
-                        </>
-                    )}
                 </div>
             </div>
         </Section>
