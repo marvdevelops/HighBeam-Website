@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 export function CtaStrip() {
   return (
     <section className="relative bg-primary py-20 clip-diagonal-top mt-20">
-      <div className="w-full px-6 md:px-12 lg:px-24 text-center">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-black mb-4 tracking-tight">
           Let’s Build Something Unforgettable
         </h2>
