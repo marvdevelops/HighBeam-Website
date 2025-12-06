@@ -18,7 +18,7 @@ export const projects = [
   {
     slug: "feedback-wall-ncsa",
     title: "Feedback Wall: Real-Time Strategic Visualization for NCSA Qatar",
-    shortDescription: "A high-level, real-time visualization tool designed for strategic forums.",
+    shortDescription: "A real-time visualization tool transforming attendee insights into a dynamic digital mosaic.",
     description: "We partnered with the National Cybersecurity Agency (NCSA) in Qatar to develop and deploy the Feedback Wall installation—a high-level, real-time visualization tool designed for strategic forums.\n\nThis system transcends traditional event engagement by transforming authenticated participant input into actionable, visual data. Attendees used a dedicated 21-inch touchscreen kiosk to convey their focused insights. The submissions were then instantly aggregated and broadcast onto a monumental LED Feedback Wall, generating a dynamic, real-time mosaic that mapped the collective intelligence of the forum.",
     image: ncsaImage3,
     images: [ncsaImage1, ncsaImage2, ncsaImage3],
@@ -40,7 +40,7 @@ export const projects = [
   {
     slug: "fifa-arab-cup-fan-wall",
     title: "FIFA Arab Cup Fan Wall: Personalized Experiential Marketing",
-    shortDescription: "An immersive, large-scale installation designed to maximize fan excitement and social sharing.",
+    shortDescription: "An immersive fan activation turning personal data into large-scale, shareable digital content.",
     description: "Highbeam conceptualized and executed the FIFA Arab Cup Fan Wall, an immersive, large-scale installation designed to maximize fan excitement and social sharing within the Fan Zone.\n\nThe installation’s core feature was personalization: using a mobile web app, visitors submitted their name, team, and number, which was instantly rendered as the back of a football jersey. This custom jersey became the dynamic background for the fan's photo-op against the massive Fan Wall display.",
     image: fifaImage1,
     images: [fifaImage1, fifaImage2],
@@ -62,7 +62,7 @@ export const projects = [
   {
     slug: "dfi-golden-voice-studio",
     title: "DFI Golden Voice Studio: Immersive Voiceover Kiosk",
-    shortDescription: "A highly engaging experiential piece celebrating the art of dubbing and voice acting.",
+    shortDescription: "An interactive recording studio experience celebrating the art of voice acting and dubbing.",
     description: "Highbeam partnered with the Doha Film Institute (DFI) to create the \"Golden Voice\" Kiosk Installation, a highly engaging experiential piece celebrating the art of dubbing and voice acting.\n\nThe installation was designed as a creative journey: users approached the large-format touchscreen kiosk, selected a movie or animation clip (in both English and Arabic), and then stepped into a soundproofed environment to record their own voiceover in real-time. The system instantly processed and overlaid the new audio track onto the original video.",
     image: dfiImage,
     images: [dfiImage, detail4, detail2],

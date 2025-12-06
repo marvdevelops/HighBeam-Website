@@ -33,7 +33,7 @@ export function FeaturedWork() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">{project.title}</h3>
-                <p className="text-zinc-500 mt-2">{project.description}</p>
+                <p className="text-zinc-500 mt-2">{project.shortDescription}</p>
               </div>
             </motion.a>
           </Link>
