@@ -3,6 +3,8 @@ import project1 from "@assets/generated_images/abstract_immersive_digital_art_in
 import project2 from "@assets/generated_images/interactive_digital_engagement_zone_with_touchscreens.png";
 import project3 from "@assets/generated_images/architectural_light_installation_in_a_dark_space.png";
 import dfiImage from "@assets/golden_voice_app_1764994852180.png";
+import fifaImage1 from "@assets/Gemini_Generated_Image_oidr42oidr42oidr_(1)_1764995151473.png";
+import fifaImage2 from "@assets/Gemini_Generated_Image_vo6u3qvo6u3qvo6u_1764995151474.png";
 import detail1 from "@assets/generated_images/detail_of_immersive_light_installation.png";
 import detail2 from "@assets/generated_images/hands_on_interactive_surface.png";
 import detail3 from "@assets/generated_images/wide_architectural_light_beam.png";
@@ -36,8 +38,8 @@ export const projects = [
     title: "FIFA Arab Cup Fan Wall: Personalized Experiential Marketing",
     shortDescription: "An immersive, large-scale installation designed to maximize fan excitement and social sharing.",
     description: "Highbeam conceptualized and executed the FIFA Arab Cup Fan Wall, an immersive, large-scale installation designed to maximize fan excitement and social sharing within the Fan Zone.\n\nThe installation’s core feature was personalization: using a mobile web app, visitors submitted their name, team, and number, which was instantly rendered as the back of a football jersey. This custom jersey became the dynamic background for the fan's photo-op against the massive Fan Wall display.",
-    image: project2,
-    images: [project2, detail2, detail1],
+    image: fifaImage1,
+    images: [fifaImage1, fifaImage2],
     deliverables: [
       {
         title: "Seamless Personalization",
