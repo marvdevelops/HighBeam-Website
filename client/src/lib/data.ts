@@ -19,21 +19,22 @@ export const projects = [
     slug: "feedback-wall-ncsa",
     title: "Feedback Wall: Real-Time Strategic Visualization for NCSA Qatar",
     shortDescription: "A real-time visualization tool transforming attendee insights into a dynamic digital mosaic.",
-    description: "We partnered with the National Cybersecurity Agency (NCSA) in Qatar to develop and deploy the Feedback Wall installation—a high-level, real-time visualization tool designed for strategic forums.\n\nThis system transcends traditional event engagement by transforming authenticated participant input into actionable, visual data. Attendees used a dedicated 21-inch touchscreen kiosk to convey their focused insights. The submissions were then instantly aggregated and broadcast onto a monumental LED Feedback Wall, generating a dynamic, real-time mosaic that mapped the collective intelligence of the forum.",
+    description: "We partnered with the National Cybersecurity Agency in Qatar to create a centerpiece for their strategic forums. The goal was to take the silent thoughts of attendees and turn them into a shared visual reality. We wanted to move beyond standard event feedback and create a moment where individual insights could build a collective picture of the room’s intelligence.",
+    theExperience: "Participants stepped up to dedicated 21-inch touchscreens to share their perspectives. As they hit submit, their words didn't just disappear into a database. They were instantly visualized on a massive LED wall, joining hundreds of others to form a living, breathing mosaic of ideas. It turned the act of giving feedback into a moment of public contribution.",
     image: ncsaImage3,
     images: [ncsaImage1, ncsaImage2, ncsaImage3],
     deliverables: [
       {
-        title: "Secure Engagement Flow",
-        description: "Ensured clear, professional attribution for authorized input within the NCSA environment."
+        title: "Secure participation",
+        description: "We created a flow that felt professional and trusted for high-level attendees."
       },
       {
-        title: "High-Impact Visualization",
-        description: "Created a compelling, large-scale visualization that communicated complex, collective security insights instantly."
+        title: "A living visual story",
+        description: "Complex ideas were instantly turned into a beautiful, large-scale display."
       },
       {
-        title: "Strategic ROI",
-        description: "Elevated the perceived sophistication of the NCSA event, fostering a culture of active contribution and collaborative security strategy."
+        title: "Active contribution",
+        description: "The installation encouraged everyone to share by making their voice visibly matter."
       }
     ]
   },
@@ -41,21 +42,22 @@ export const projects = [
     slug: "fifa-arab-cup-fan-wall",
     title: "FIFA Arab Cup Fan Wall: Personalized Experiential Marketing",
     shortDescription: "An immersive fan activation turning personal data into large-scale, shareable digital content.",
-    description: "Highbeam conceptualized and executed the FIFA Arab Cup Fan Wall, an immersive, large-scale installation designed to maximize fan excitement and social sharing within the Fan Zone.\n\nThe installation’s core feature was personalization: using a mobile web app, visitors submitted their name, team, and number, which was instantly rendered as the back of a football jersey. This custom jersey became the dynamic background for the fan's photo-op against the massive Fan Wall display.",
+    description: "We worked with the FIFA Arab Cup to bring energy and personal connection to the Fan Zone. The challenge was to give thousands of fans a way to see themselves in the game. We built an installation that turned personal fandom into a massive public celebration, giving every visitor a moment of fame on the big screen.",
+    theExperience: "Fans used a simple mobile app to enter their name, team, and favorite number. In seconds, that data transformed into a custom football jersey displayed on the giant Fan Wall. It wasn't just a graphic. It became a personalized backdrop for photos, letting fans pose with their \"official\" jersey larger than life, ready to share with the world.",
     image: fifaImage1,
     images: [fifaImage1, fifaImage2],
     deliverables: [
       {
-        title: "Seamless Personalization",
-        description: "Delivered an instant, high-quality visual asset (the custom jersey) via a responsive mobile web platform."
+        title: "Instant personalization",
+        description: "Fans got a high-quality custom digital asset in seconds."
       },
       {
-        title: "Viral Content Generation",
-        description: "Created a highly shareable, branded experience that amplified the event's reach across social media."
+        title: "Shareable moments",
+        description: "The experience created branded content that fans were eager to post online."
       },
       {
-        title: "High-Throughput System",
-        description: "Designed a robust admin approval flow to ensure high-quality, branded content was displayed on the main wall in real-time, managing the high volume of a major FIFA event."
+        title: "Reliable scale",
+        description: "Our system handled thousands of interactions smoothly during the live event."
       }
     ]
   },
@@ -63,21 +65,22 @@ export const projects = [
     slug: "dfi-golden-voice-studio",
     title: "DFI Golden Voice Studio: Immersive Voiceover Kiosk",
     shortDescription: "An interactive recording studio experience celebrating the art of voice acting and dubbing.",
-    description: "Highbeam partnered with the Doha Film Institute (DFI) to create the \"Golden Voice\" Kiosk Installation, a highly engaging experiential piece celebrating the art of dubbing and voice acting.\n\nThe installation was designed as a creative journey: users approached the large-format touchscreen kiosk, selected a movie or animation clip (in both English and Arabic), and then stepped into a soundproofed environment to record their own voiceover in real-time. The system instantly processed and overlaid the new audio track onto the original video.",
+    description: "We collaborated with the Doha Film Institute to celebrate the magic of cinema through sound. The Golden Voice installation was built to let visitors step into the shoes of a voice actor. We wanted to demystify the art of dubbing and give film lovers a hands-on way to become part of their favorite scenes.",
+    theExperience: "Users started at a large touchscreen to pick a clip from a famous movie or animation. They then stepped into a private soundproof booth and recorded their own lines in English or Arabic. The system worked in real time, overlaying their voice onto the original footage so they could instantly watch—and keep—their performance as a new movie star.",
     image: dfiImage,
     images: [dfiImage, detail4, detail2],
     deliverables: [
       {
-        title: "Bilingual UX/UI",
-        description: "Seamless integration of Arabic and English content, appealing to DFI's diverse, global, and local audience."
+        title: "Seamless bilingual flow",
+        description: "The interface worked perfectly for both Arabic and English speakers."
       },
       {
-        title: "Technical Precision",
-        description: "Engineered a robust system for simultaneous video playback and high-quality audio recording within the demanding live event setting."
+        title: "Studio quality audio",
+        description: "We engineered a system that captured crisp sound in a busy event space."
       },
       {
-        title: "Viral Activation",
-        description: "Created a personalized, high-value digital takeaway (the final dubbed video) that drove user participation and organic social media sharing for the DFI brand."
+        title: "A personal takeaway",
+        description: "Visitors left with a unique video of their performance to share with friends."
       }
     ]
   }

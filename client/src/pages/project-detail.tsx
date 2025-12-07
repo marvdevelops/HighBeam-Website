@@ -86,7 +86,16 @@ export default function ProjectDetailPage() {
                     {project.description}
                 </p>
 
-                <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-8 border-b border-zinc-800 pb-4">Key Deliverables</h3>
+                {project.theExperience && (
+                  <>
+                    <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-8 border-b border-zinc-800 pb-4">The Experience</h3>
+                    <p className="text-xl text-zinc-300 leading-relaxed whitespace-pre-wrap mb-16">
+                        {project.theExperience}
+                    </p>
+                  </>
+                )}
+
+                <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-8 border-b border-zinc-800 pb-4">What We Delivered</h3>
                 
                 <div className="grid gap-12">
                     {project.deliverables && project.deliverables.map((item, index) => (
