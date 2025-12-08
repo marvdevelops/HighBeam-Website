@@ -9,6 +9,7 @@ import ncsaImage1 from "@assets/Gemini_Generated_Image_6693mj6693mj6693_17649953
 import ncsaImage2 from "@assets/Gemini_Generated_Image_eg3m1qeg3m1qeg3m_1764995345873.png";
 import ncsaImage3 from "@assets/Gemini_Generated_Image_oqm6a0oqm6a0oqm6_1764995345873.png";
 import ncsaImage4 from "@assets/Gemini_Generated_Image_v4wx7zv4wx7zv4wx_1764995345873.png";
+import qcertImage from "@assets/cover_1_1765200427526.jpg";
 import detail1 from "@assets/generated_images/detail_of_immersive_light_installation.png";
 import detail2 from "@assets/generated_images/hands_on_interactive_surface.png";
 import detail3 from "@assets/generated_images/wide_architectural_light_beam.png";
@@ -81,6 +82,29 @@ export const projects = [
       {
         title: "A takeaway people were proud of",
         description: "Personalized dubbed clips that participants saved, shared, and remembered."
+      }
+    ]
+  },
+  {
+    slug: "qcert-vr-training",
+    title: "QCERT VR TRAINING: Learning to Respond, One Real Scenario at a Time",
+    shortDescription: "A VR training experience that teaches cyber security response through immersive, realistic scenarios.",
+    description: "HighBeam developed a Virtual Reality training experience for QCert Qatar that helps people understand what it really feels like to face a cyber security attack. Instead of reading instructions or watching videos, users step inside a realistic scenario where they must make decisions, follow proper steps, and respond under pressure.\n\nThe goal was simple. Teach people how to stay calm, think clearly, and apply the right actions when something goes wrong. The VR environment guides them through each phase of the incident, showing the impact of their choices in real time.",
+    theExperience: "You can see users become more focused as the simulation unfolds. They start connecting the dots, understanding why each step matters, and gaining confidence that they can handle situations that normally feel intimidating.\n\nIt is training that feels real and meaningful, and it turns complex cyber security concepts into something anyone can grasp.",
+    image: qcertImage,
+    images: [qcertImage],
+    deliverables: [
+      {
+        title: "Immersive, high fidelity simulation",
+        description: "A VR environment designed to mirror real cyber attack scenarios without overwhelming the learner."
+      },
+      {
+        title: "Step by step guided learning",
+        description: "A clear flow that walks users through each phase of incident response, helping them understand what to do and why it matters."
+      },
+      {
+        title: "A safe space to practice under pressure",
+        description: "Users experience the urgency of a real incident while knowing they can learn, try again, and grow their confidence."
       }
     ]
   }
