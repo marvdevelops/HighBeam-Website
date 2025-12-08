@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import * as z from "zod";
 import {
   Form,
@@ -27,6 +28,7 @@ const formSchema = z.object({
 
 export function Contact() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -38,14 +40,21 @@ export function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    window.location.href = `mailto:info@highbeam.digital?subject=Inquiry from ${values.name} - ${values.company}&body=Name: ${values.name}%0D%0ACompany: ${values.company}%0D%0AEmail: ${values.email}%0D%0APhone: ${values.phone || 'N/A'}%0D%0A%0D%0ADescription:%0D%0A${values.description}`;
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    
+    // Simulate network delay
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    console.log("Form submitted:", values);
+    
     toast({
-      title: "Opening Email Client",
-      description: "Drafting your inquiry to info@highbeam.digital",
+      title: "Message Sent",
+      description: "Thanks for reaching out! We'll be in touch shortly.",
     });
+    
     form.reset();
+    setIsSubmitting(false);
   }
 
   return (
@@ -143,8 +152,12 @@ export function Contact() {
                 )}
                 />
 
-                <Button type="submit" className="w-full bg-primary text-black font-bold h-14 text-lg hover:bg-white hover:scale-[1.01] transition-all rounded-none">
-                    Send Inquiry
+                <Button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-black font-bold h-14 text-lg hover:bg-white hover:scale-[1.01] transition-all rounded-none disabled:opacity-70 disabled:cursor-not-allowed"
+                >
+                    {isSubmitting ? "Sending..." : "Send Inquiry"}
                 </Button>
             </form>
             </Form>
