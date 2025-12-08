@@ -1,0 +1,59 @@
+✅ 1. FEEDBACK WALL — HUMAN, WARM, EMOTIONALLY GROUNDED
+PROJECT OVERVIEW
+
+HighBeam developed an interactive Feedback Wall for a major cybersecurity forum. The goal was simple. Help people feel like their ideas mattered and show the conversations of the room coming to life in real time.
+
+We built a two screen setup. A 21 inch touchscreen kiosk where attendees could draw or write their thoughts, and a large LED wall that instantly turned every submission into a living digital mosaic. People could see their input appear right in front of them and become part of something bigger.
+
+The installation made the forum feel more connected. You could feel the crowd pause, look up at the wall, and recognize that their individual voice contributed to a shared picture of the event.
+
+KEY DELIVERABLES
+
+An inviting input experience
+A guided, secure flow that encouraged attendees to take part without hesitation.
+
+A live visual mosaic
+A responsive display that transformed every insight into motion and color in real time.
+
+A stronger sense of community
+A centerpiece that made participants feel heard and helped the event feel more collaborative and human.
+
+✅ 2. FIFA ARAB CUP FAN WALL — HUMAN, WARM, EMOTIONALLY GROUNDED
+PROJECT OVERVIEW
+
+HighBeam developed the FIFA Arab Cup Fan Wall to capture the pride and excitement of being part of a global football moment. Fans love seeing themselves in the story, so we created a way for them to do exactly that.
+
+Through a mobile web app, visitors typed in their name, team, and jersey number. Within seconds, their custom jersey appeared on a huge Fan Wall, ready for their photo. You could see people smile as their jersey lit up the screen and friends gathered around for pictures.
+
+The experience felt personal and joyful and it turned simple inputs into memories that fans shared long after they left the venue.
+
+KEY DELIVERABLES
+
+Simple and fast personalization
+A smooth mobile flow that made custom jerseys appear almost instantly.
+
+Designed for real excitement
+Bold visuals that looked great in photos and encouraged fans to share their moment.
+
+Built for large crowds
+A reliable approval system that handled heavy foot traffic without breaking the rhythm of the event.
+
+✅ 3. DFI GOLDEN VOICE STUDIO — HUMAN, WARM, EMOTIONALLY GROUNDED
+PROJECT OVERVIEW
+
+HighBeam developed the Golden Voice Studio to give visitors a chance to experience the fun of dubbing their own movie scene. It was designed to be playful, expressive, and memorable.
+
+Guests stepped up to the kiosk, chose a movie clip, then entered a small recording booth where they performed their voiceover. The system processed everything instantly and played back their newly dubbed scene. You could hear people laugh, redo their lines, and call their friends over to watch.
+
+It became one of those installations people talk about. Not because of the technology alone, but because it made them feel creative and confident enough to try something new.
+
+KEY DELIVERABLES
+
+Friendly bilingual interface
+An easy to use design that made both Arabic and English speaking visitors feel comfortable.
+
+Smooth real time processing
+Audio and video handling that stayed responsive during constant use.
+
+A takeaway people were proud of
+Personalized dubbed clips that participants saved, shared, and remembered.

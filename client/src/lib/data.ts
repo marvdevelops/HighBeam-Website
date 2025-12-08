@@ -17,70 +17,70 @@ import detail4 from "@assets/generated_images/holographic_texture_detail.png";
 export const projects = [
   {
     slug: "feedback-wall-ncsa",
-    title: "Feedback Wall: Real-Time Strategic Visualization for NCSA Qatar",
+    title: "FEEDBACK WALL: Where Every Insight Becomes Part of the Big Picture",
     shortDescription: "A real-time visualization tool transforming attendee insights into a dynamic digital mosaic.",
-    description: "We partnered with the National Cybersecurity Agency in Qatar to create a centerpiece for their strategic forums. The goal was to take the silent thoughts of attendees and turn them into a shared visual reality. We wanted to move beyond standard event feedback and create a moment where individual insights could build a collective picture of the room’s intelligence.",
-    theExperience: "Participants stepped up to dedicated 21-inch touchscreens to share their perspectives. As they hit submit, their words didn't just disappear into a database. They were instantly visualized on a massive LED wall, joining hundreds of others to form a living, breathing mosaic of ideas. It turned the act of giving feedback into a moment of public contribution.",
+    description: "HighBeam developed an interactive Feedback Wall for a major cybersecurity forum. The goal was simple. Help people feel like their ideas mattered and show the conversations of the room coming to life in real time.",
+    theExperience: "We built a two screen setup. A 21 inch touchscreen kiosk where attendees could draw or write their thoughts, and a large LED wall that instantly turned every submission into a living digital mosaic. People could see their input appear right in front of them and become part of something bigger.\n\nThe installation made the forum feel more connected. You could feel the crowd pause, look up at the wall, and recognize that their individual voice contributed to a shared picture of the event.",
     image: ncsaImage3,
     images: [ncsaImage1, ncsaImage2, ncsaImage3],
     deliverables: [
       {
-        title: "Secure participation",
-        description: "We created a flow that felt professional and trusted for high-level attendees."
+        title: "An inviting input experience",
+        description: "A guided, secure flow that encouraged attendees to take part without hesitation."
       },
       {
-        title: "A living visual story",
-        description: "Complex ideas were instantly turned into a beautiful, large-scale display."
+        title: "A live visual mosaic",
+        description: "A responsive display that transformed every insight into motion and color in real time."
       },
       {
-        title: "Active contribution",
-        description: "The installation encouraged everyone to share by making their voice visibly matter."
+        title: "A stronger sense of community",
+        description: "A centerpiece that made participants feel heard and helped the event feel more collaborative and human."
       }
     ]
   },
   {
     slug: "fifa-arab-cup-fan-wall",
-    title: "FIFA Arab Cup Fan Wall: Personalized Experiential Marketing",
+    title: "FIFA ARAB CUP FAN WALL: Your Name, Your Jersey, Your Moment",
     shortDescription: "An immersive fan activation turning personal data into large-scale, shareable digital content.",
-    description: "We worked with the FIFA Arab Cup to bring energy and personal connection to the Fan Zone. The challenge was to give thousands of fans a way to see themselves in the game. We built an installation that turned personal fandom into a massive public celebration, giving every visitor a moment of fame on the big screen.",
-    theExperience: "Fans used a simple mobile app to enter their name, team, and favorite number. In seconds, that data transformed into a custom football jersey displayed on the giant Fan Wall. It wasn't just a graphic. It became a personalized backdrop for photos, letting fans pose with their \"official\" jersey larger than life, ready to share with the world.",
+    description: "HighBeam developed the FIFA Arab Cup Fan Wall to capture the pride and excitement of being part of a global football moment. Fans love seeing themselves in the story, so we created a way for them to do exactly that.",
+    theExperience: "Through a mobile web app, visitors typed in their name, team, and jersey number. Within seconds, their custom jersey appeared on a huge Fan Wall, ready for their photo. You could see people smile as their jersey lit up the screen and friends gathered around for pictures.\n\nThe experience felt personal and joyful and it turned simple inputs into memories that fans shared long after they left the venue.",
     image: fifaImage1,
     images: [fifaImage1, fifaImage2],
     deliverables: [
       {
-        title: "Instant personalization",
-        description: "Fans got a high-quality custom digital asset in seconds."
+        title: "Simple and fast personalization",
+        description: "A smooth mobile flow that made custom jerseys appear almost instantly."
       },
       {
-        title: "Shareable moments",
-        description: "The experience created branded content that fans were eager to post online."
+        title: "Designed for real excitement",
+        description: "Bold visuals that looked great in photos and encouraged fans to share their moment."
       },
       {
-        title: "Reliable scale",
-        description: "Our system handled thousands of interactions smoothly during the live event."
+        title: "Built for large crowds",
+        description: "A reliable approval system that handled heavy foot traffic without breaking the rhythm of the event."
       }
     ]
   },
   {
     slug: "dfi-golden-voice-studio",
-    title: "DFI Golden Voice Studio: Immersive Voiceover Kiosk",
+    title: "DFI GOLDEN VOICE STUDIO: Step In, Speak Up, Star in Your Own Scene",
     shortDescription: "An interactive recording studio experience celebrating the art of voice acting and dubbing.",
-    description: "We collaborated with the Doha Film Institute to celebrate the magic of cinema through sound. The Golden Voice installation was built to let visitors step into the shoes of a voice actor. We wanted to demystify the art of dubbing and give film lovers a hands-on way to become part of their favorite scenes.",
-    theExperience: "Users started at a large touchscreen to pick a clip from a famous movie or animation. They then stepped into a private soundproof booth and recorded their own lines in English or Arabic. The system worked in real time, overlaying their voice onto the original footage so they could instantly watch—and keep—their performance as a new movie star.",
+    description: "HighBeam developed the Golden Voice Studio to give visitors a chance to experience the fun of dubbing their own movie scene. It was designed to be playful, expressive, and memorable.",
+    theExperience: "Guests stepped up to the kiosk, chose a movie clip, then entered a small recording booth where they performed their voiceover. The system processed everything instantly and played back their newly dubbed scene. You could hear people laugh, redo their lines, and call their friends over to watch.\n\nIt became one of those installations people talk about. Not because of the technology alone, but because it made them feel creative and confident enough to try something new.",
     image: dfiImage,
     images: [dfiImage, detail4, detail2],
     deliverables: [
       {
-        title: "Seamless bilingual flow",
-        description: "The interface worked perfectly for both Arabic and English speakers."
+        title: "Friendly bilingual interface",
+        description: "An easy to use design that made both Arabic and English speaking visitors feel comfortable."
       },
       {
-        title: "Studio quality audio",
-        description: "We engineered a system that captured crisp sound in a busy event space."
+        title: "Smooth real time processing",
+        description: "Audio and video handling that stayed responsive during constant use."
       },
       {
-        title: "A personal takeaway",
-        description: "Visitors left with a unique video of their performance to share with friends."
+        title: "A takeaway people were proud of",
+        description: "Personalized dubbed clips that participants saved, shared, and remembered."
       }
     ]
   }
