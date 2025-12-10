@@ -55,14 +55,14 @@ export function Hero() {
                 Start a Project
               </Button>
             </Link>
-            <Link href="/work">
+            <a href="https://calendly.com/high-beam/30min" target="_blank" rel="noopener noreferrer">
               <Button 
                 variant="outline" 
                 className="border-white/20 text-white hover:bg-white/10 hover:border-white font-medium rounded-none px-8 py-6 text-lg transition-all"
               >
-                See Our Work
+                Let's Talk
               </Button>
-            </Link>
+            </a>
           </div>
         </motion.div>
 
