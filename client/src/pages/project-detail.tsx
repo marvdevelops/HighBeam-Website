@@ -6,7 +6,7 @@ import { useRoute, Link } from "wouter";
 import { projects } from "@/lib/data";
 import NotFound from "./not-found";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -25,9 +25,18 @@ export default function ProjectDetailPage() {
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   
+  const project = match ? projects.find(p => p.slug === params.slug) : null;
+  
+  useEffect(() => {
+    if (project) {
+      document.title = `${project.title} | HighBeam`;
+    }
+    return () => {
+      document.title = 'HighBeam | Experiential Tech Studio';
+    };
+  }, [project]);
+  
   if (!match) return <NotFound />;
-
-  const project = projects.find(p => p.slug === params.slug);
   
   if (!project) return <NotFound />;
 
