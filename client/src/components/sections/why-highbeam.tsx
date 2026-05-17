@@ -1,6 +1,4 @@
 import { Section } from "@/components/ui/section";
-import { Check } from "lucide-react";
-import bgImage from "@assets/generated_images/abstract_light_gray_technical_pattern.png";
 
 const reasons = [
   "Custom-crafted, premium-quality builds",
@@ -12,29 +10,23 @@ const reasons = [
 
 export function WhyHighBeam() {
   return (
-    <Section className="bg-zinc-100 border-y border-zinc-200 relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-60">
-        <img src={bgImage} alt="" className="w-full h-full object-cover" />
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-12 md:gap-24 relative z-10">
+    <Section className="bg-primary">
+      <div className="grid md:grid-cols-2 gap-12 md:gap-24">
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Technology That Feels Alive</h2>
-          <p className="text-xl text-zinc-600 leading-relaxed">
+          <span className="text-[10px] uppercase tracking-[0.4em] text-black/50 border-l-2 border-black/30 pl-3 mb-6 block">Why HighBeam</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
+            Technology That Feels Alive
+          </h2>
+          <p className="text-xl text-black/70 leading-relaxed">
             We combine imagination, engineering, and storytelling to deliver experiences that run flawlessly when it matters most.
           </p>
         </div>
 
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center divide-y divide-black/10">
           {reasons.map((reason, index) => (
-            <div key={index} className="flex items-center gap-4 group">
-              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-zinc-200 flex items-center justify-center group-hover:bg-primary transition-colors">
-                <Check className="w-3 h-3 text-black" />
-              </div>
-              <span className="text-lg text-zinc-800 group-hover:text-black transition-colors font-medium">
-                {reason}
-              </span>
+            <div key={index} className="flex items-center gap-4 py-5 first:pt-0 last:pb-0 group">
+              <div className="flex-shrink-0 w-2 h-2 bg-black rotate-45 group-hover:scale-150 transition-transform" />
+              <span className="text-lg text-black font-medium">{reason}</span>
             </div>
           ))}
         </div>
