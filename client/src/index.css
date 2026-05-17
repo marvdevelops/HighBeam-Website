@@ -1,80 +1,55 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: hsl(0 0% 4%); /* #0A0A0A */
-  --color-foreground: hsl(0 0% 95%); /* #F2F2F2 */
-  
-  --color-card: hsl(0 0% 10%); /* #1A1A1A */
+  --color-background: hsl(0 0% 4%);
+  --color-foreground: hsl(0 0% 95%);
+  --color-card: hsl(0 0% 10%);
   --color-card-foreground: hsl(0 0% 95%);
-  
   --color-popover: hsl(0 0% 10%);
   --color-popover-foreground: hsl(0 0% 95%);
-  
-  --color-primary: hsl(48 100% 50%); /* #FFD300 */
+  --color-primary: hsl(48 100% 50%);
   --color-primary-foreground: hsl(0 0% 4%);
-  
   --color-secondary: hsl(0 0% 15%);
   --color-secondary-foreground: hsl(0 0% 95%);
-  
   --color-muted: hsl(0 0% 15%);
   --color-muted-foreground: hsl(0 0% 60%);
-  
   --color-accent: hsl(48 100% 50%);
   --color-accent-foreground: hsl(0 0% 4%);
-  
   --color-destructive: hsl(0 62% 30%);
   --color-destructive-foreground: hsl(0 0% 95%);
-  
   --color-border: hsl(0 0% 20%);
   --color-input: hsl(0 0% 20%);
   --color-ring: hsl(48 100% 50%);
-  
-  --radius: 0rem; /* Sharp corners for futuristic feel */
-  
+  --radius: 0rem;
   --font-sans: "Inter", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground font-sans;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight font-bold uppercase;
-  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-sans; }
+  h1, h2, h3, h4, h5, h6 { @apply font-display tracking-tight font-bold uppercase; }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  @apply bg-background;
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-zinc-800 hover:bg-primary/50 transition-colors;
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-background; }
+::-webkit-scrollbar-thumb { @apply bg-zinc-800 hover:bg-primary/50 transition-colors; }
+html { scroll-behavior: smooth; }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Utilities */
 @layer utilities {
   .text-stroke {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
     color: transparent;
   }
-  
-  .clip-diagonal {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-  }
-  
-  .clip-diagonal-top {
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-  }
+  .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+  .clip-diagonal-top { clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
 }
