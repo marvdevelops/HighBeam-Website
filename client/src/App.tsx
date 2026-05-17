@@ -1,3 +1,4 @@
+// v2 redesign — 2026-05-17
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
