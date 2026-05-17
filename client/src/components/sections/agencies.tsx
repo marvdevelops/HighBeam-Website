@@ -1,7 +1,9 @@
 import { Section } from "@/components/ui/section";
-import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
 import { Handshake } from "lucide-react";
-import bgImage from "@assets/generated_images/dark_fluid_abstract_shapes.png";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const benefits = [
   "White-label or co-branded builds",
@@ -13,38 +15,43 @@ const benefits = [
 
 export function Agencies() {
   return (
-    <Section id="agencies" className="bg-zinc-950 relative overflow-hidden">
-       {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-40">
-        <div className="absolute inset-0 bg-zinc-950/90" />
-        <img src={bgImage} alt="" className="w-full h-full object-cover" />
+    <Section id="agencies" className="bg-black">
+      <div className="mb-20">
+        <span className="text-[10px] uppercase tracking-[0.4em] text-primary border-l-2 border-primary pl-3 mb-6 block">For Agencies</span>
+        <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight max-w-3xl">
+          Your Creative<br />Technology Team.
+        </h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="order-2 md:order-1">
-            <div className="grid gap-4">
-                {benefits.map((benefit, index) => (
-                    <Card key={index} className="bg-black border-zinc-800 rounded-none">
-                        <CardContent className="p-4 flex items-center gap-4">
-                            <div className="w-2 h-2 bg-zinc-700 rounded-full" />
-                            <span className="text-zinc-300 font-medium">{benefit}</span>
-                        </CardContent>
-                    </Card>
-                ))}
-            </div>
+      <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
+        <div>
+          <p className="text-xl text-zinc-300 leading-relaxed mb-8">
+            HighBeam partners with event, creative, and marketing agencies to power unforgettable experiences behind the scenes. We act as your creative technology team — elevating your concepts with premium digital execution.
+          </p>
+          <p className="text-xl font-medium text-white italic border-l-2 border-primary pl-4 mb-12">
+            "If your client wants something interactive, immersive, or bold, we'll help you bring it to life."
+          </p>
+          <Link href="/contact">
+            <Button className="bg-primary text-black hover:bg-white hover:text-black font-bold rounded-none px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95">
+              Partner With Us <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
-        
-        <div className="order-1 md:order-2">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-zinc-900 rounded-full mb-6 text-primary">
-                <Handshake className="w-8 h-8" />
-            </div>
-            <h2 className="text-4xl font-bold text-white mb-6">For Agencies</h2>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-6">
-                HighBeam partners with event, creative, and marketing agencies to power unforgettable experiences behind the scenes. We act as your creative technology team — elevating your concepts with premium digital execution.
-            </p>
-            <p className="text-xl font-medium text-white italic">
-                "If your client wants something interactive, immersive, or bold, we’ll help you bring it to life."
-            </p>
+
+        <div className="divide-y divide-zinc-800 border border-zinc-800">
+          {benefits.map((benefit, index) => (
+            <motion.div
+              key={index}
+              className="flex items-center gap-4 p-6 group hover:bg-zinc-950 transition-colors"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.07 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-2 h-2 bg-zinc-700 rotate-45 group-hover:bg-primary transition-colors flex-shrink-0" />
+              <span className="text-zinc-300 font-medium group-hover:text-white transition-colors text-lg">{benefit}</span>
+            </motion.div>
+          ))}
         </div>
       </div>
     </Section>
