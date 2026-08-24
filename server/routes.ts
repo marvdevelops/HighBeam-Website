@@ -2,6 +2,19 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { z } from "zod";
+import { projectsMeta } from "@shared/projects";
+
+const SITE_URL = "https://highbeam.digital";
+
+const staticRoutes = [
+  "/",
+  "/capabilities",
+  "/work",
+  "/process",
+  "/about",
+  "/agencies",
+  "/contact",
+];
 
 const contactFormSchema = z.object({
   name: z.string().min(2),
@@ -15,7 +28,21 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  
+
+  app.get("/sitemap.xml", (_req, res) => {
+    const urls = [
+      ...staticRoutes,
+      ...projectsMeta.map((p) => `/work/${p.slug}`),
+    ];
+
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map((url) => `  <url>\n    <loc>${SITE_URL}${url}</loc>\n  </url>`).join("\n")}
+</urlset>`;
+
+    res.type("application/xml").send(xml);
+  });
+
   app.post("/api/contact", async (req, res) => {
     try {
       const formData = contactFormSchema.parse(req.body);
