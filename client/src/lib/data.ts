@@ -14,11 +14,11 @@ import kokoSafety from "@assets/koko-screenshot-safety.png";
 import kokoHero from "@assets/koko-hero.png";
 import kokoThumbnail from "@assets/koko-thumbnail.jpeg";
 import survivalIcon from "@assets/survivalkit-icon.png";
-import survival1 from "@assets/survivalkit-screenshot-1.webp";
-import survival2 from "@assets/survivalkit-screenshot-2.webp";
-import survival3 from "@assets/survivalkit-screenshot-3.webp";
 import survivalHero from "@assets/survivalkit-hero.png";
 import survivalThumbnail from "@assets/survivalkit-thumbnail.jpeg";
+import survivalHome from "@assets/survivalkit-home.jpeg";
+import survivalTools from "@assets/survivalkit-tools.jpeg";
+import survivalMap from "@assets/survivalkit-map.jpeg";
 import rootah1 from "@assets/rootah-screenshot-1.jpeg";
 import rootah2 from "@assets/rootah-screenshot-2.jpeg";
 import rootah3 from "@assets/rootah-screenshot-3.jpeg";
@@ -188,7 +188,7 @@ export const projects: Project[] = [
     description: "An emergency doesn't wait for a signal bar. SurvivalKit is an offline guide built for the exact moment a Filipino family's phone has no connection and no time to search for help.",
     theExperience: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal, zero data collected. The design question wasn't \"how do we make this engaging.\" It was \"what does someone need in their hand in the sixty seconds after the power goes out.\" That's a different kind of tech, built for a moment when a person needs it to just work, not to hold their attention.",
     image: survivalThumbnail,
-    images: [survivalHero, survival1, survival2, survival3],
+    images: [survivalHero, survivalHome, survivalTools, survivalMap],
     externalUrl: "https://apps.apple.com/us/app/survivalkit-emergency-guide/id6766275190",
     deliverables: [
       { title: "Fully offline maps", description: "484+ points of interest within 10km — hospitals, police, evacuation routes — no data needed." },
