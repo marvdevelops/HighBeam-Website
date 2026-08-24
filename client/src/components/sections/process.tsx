@@ -2,11 +2,11 @@ import { Section } from "@/components/ui/section";
 import { motion } from "framer-motion";
 
 const steps = [
-  { title: "Discover", description: "We dive into your goals, audience, and the feeling you want people to experience." },
-  { title: "Design", description: "We shape the experience — defining interactions, user flow, visual direction, and story." },
-  { title: "Build", description: "We develop the experience with premium engineering and meticulous attention to detail." },
-  { title: "Test", description: "We refine, optimize, and stress-test every component to ensure flawless performance during live events." },
-  { title: "Launch", description: "We assist with setup, deployment, and on-site execution, ensuring everything works exactly as intended." },
+  { title: "Discover", description: "What's this for, who shows up, and what do you want them to do when they get there. That's the whole first conversation." },
+  { title: "Design", description: "Interactions, user flow, visual direction, and the story that ties them together get mapped out before a line of code gets written." },
+  { title: "Build", description: "This is where most of the time goes: real engineering, tested against the actual hardware and space it'll run in, not a simulation of it." },
+  { title: "Test", description: "Every component gets stress-tested the way it'll actually be used: by a crowd, under time pressure, with no IT staff standing by to reboot it." },
+  { title: "Launch", description: "We're on-site for setup and the first hours of live use. If something needs adjusting in the room, it gets adjusted in the room, not over email the next day." },
 ];
 
 export function Process() {
@@ -17,7 +17,7 @@ export function Process() {
         <div className="flex flex-col md:flex-row justify-between items-end gap-6">
           <h2 className="text-4xl md:text-5xl font-bold text-white max-w-2xl">How We Build Experiences</h2>
           <p className="text-zinc-400 max-w-md text-right hidden md:block">
-            Experiences are crafted — not assembled. Our process blends creativity, design, engineering, and precision to turn vision into reality.
+            Five stages, the same five every time, whether it's a museum kiosk or a stadium-scale activation. Skipping one is usually where a launch-day surprise comes from.
           </p>
         </div>
       </div>

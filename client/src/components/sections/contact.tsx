@@ -88,7 +88,7 @@ export function Contact() {
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Let’s Build Your Next Experience</h2>
             <p className="text-xl text-zinc-400">
-                Tell us about your event, your brand, and the feeling you want people to remember.
+                Tell us what you're building and when it needs to be ready. We'll tell you honestly whether we're the right fit.
             </p>
         </div>
 
