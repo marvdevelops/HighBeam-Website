@@ -11,10 +11,12 @@ import kokoHome from "@assets/koko-screenshot-home.png";
 import kokoThinking from "@assets/koko-screenshot-thinking.png";
 import kokoAnswer from "@assets/koko-screenshot-answer.png";
 import kokoSafety from "@assets/koko-screenshot-safety.png";
+import kokoHero from "@assets/koko-hero.png";
 import survivalIcon from "@assets/survivalkit-icon.png";
 import survival1 from "@assets/survivalkit-screenshot-1.webp";
 import survival2 from "@assets/survivalkit-screenshot-2.webp";
 import survival3 from "@assets/survivalkit-screenshot-3.webp";
+import survivalHero from "@assets/survivalkit-hero.png";
 import rootah1 from "@assets/rootah-screenshot-1.jpeg";
 import rootah2 from "@assets/rootah-screenshot-2.jpeg";
 import rootah3 from "@assets/rootah-screenshot-3.jpeg";
@@ -115,8 +117,8 @@ export const projects: Project[] = [
     shortDescription: "A chat companion for kids 5 to 10, built with parental controls and safety filtering from day one, not bolted on after launch.",
     description: "Most AI products for kids are built for engagement first and safety as an afterthought. KoKo is a chat companion for kids 5 to 10 where the parental controls and safety filtering came first, before a single feature got added on top.",
     theExperience: "A kid's first conversation with KoKo isn't with a chatbot optimized to keep them scrolling. It's with something a parent can actually watch, adjust, and trust, because the guardrails were the starting point of the build, not a patch after launch. That's the whole bet: AI for kids should earn a parent's trust before it earns a kid's attention.",
-    image: kokoHome,
-    images: [kokoHome, kokoThinking, kokoAnswer, kokoSafety],
+    image: kokoHero,
+    images: [kokoHero, kokoHome, kokoThinking, kokoAnswer, kokoSafety],
     externalUrl: "https://heykoko.app",
     deliverables: [
       { title: "Multi-layer safety system", description: "Sensitive topics are gently redirected to trusted adults without disrupting the child's experience." },
@@ -133,8 +135,8 @@ export const projects: Project[] = [
     shortDescription: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal. Built for the moment your phone has no bars.",
     description: "An emergency doesn't wait for a signal bar. SurvivalKit is an offline guide built for the exact moment a Filipino family's phone has no connection and no time to search for help.",
     theExperience: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal, zero data collected. The design question wasn't \"how do we make this engaging.\" It was \"what does someone need in their hand in the sixty seconds after the power goes out.\" That's a different kind of tech, built for a moment when a person needs it to just work, not to hold their attention.",
-    image: survival1,
-    images: [survival1, survival2, survival3],
+    image: survivalHero,
+    images: [survivalHero, survival1, survival2, survival3],
     externalUrl: "https://apps.apple.com/us/app/survivalkit-emergency-guide/id6766275190",
     deliverables: [
       { title: "Fully offline maps", description: "484+ points of interest within 10km — hospitals, police, evacuation routes — no data needed." },
