@@ -13,14 +13,14 @@ export function About() {
     <Section id="about" className="bg-black">
       {/* Pull quote */}
       <motion.div
-        className="border-l-4 border-primary pl-8 mb-24"
+        className="mb-24"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <p className="text-4xl md:text-6xl font-bold text-white leading-tight">
-          "A tech studio with a{" "}
-          <span className="text-zinc-600">creative soul</span>."
+        <p className="font-display uppercase text-4xl md:text-6xl font-bold text-white leading-tight">
+          A tech studio with a{" "}
+          <span className="bg-primary text-black px-2">creative soul</span>
         </p>
       </motion.div>
 
