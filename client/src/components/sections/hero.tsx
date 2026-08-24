@@ -5,12 +5,6 @@ import heroVideo from "@assets/generated_videos/gold_light_trails_network.mp4";
 import vrImage from "@assets/virtual-reality_1764951052102.png";
 import { useRef } from "react";
 
-const marqueeItems = [
-  "Interactive", "Immersive", "Experiential", "Branded Installations",
-  "Creative Technology", "Interactive", "Immersive", "Experiential",
-  "Branded Installations", "Creative Technology",
-];
-
 export function Hero() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -72,17 +66,6 @@ export function Hero() {
             <img src={vrImage} alt="Virtual Reality Experience" className="h-[80%] w-auto object-contain drop-shadow-[0_0_50px_rgba(255,211,0,0.15)]" />
           </motion.div>
         </motion.div>
-      </div>
-
-      {/* Marquee strip */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-zinc-800 bg-black/60 backdrop-blur-sm py-3 overflow-hidden">
-        <div className="flex whitespace-nowrap animate-marquee">
-          {marqueeItems.map((item, i) => (
-            <span key={i} className="text-[10px] uppercase tracking-[0.35em] text-zinc-500 px-8">
-              {item} <span className="text-primary">·</span>
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   );
