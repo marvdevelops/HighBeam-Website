@@ -27,7 +27,7 @@ export function ClientLogos() {
               key={logo.name}
               src={logo.src}
               alt={logo.name}
-              className="h-[29px] md:h-[38px] w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
+              className="h-[38px] md:h-[49px] w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 0.5, y: 0 }}
               transition={{ delay: index * 0.06 }}
