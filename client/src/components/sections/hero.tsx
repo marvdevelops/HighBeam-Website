@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroVideo from "@assets/generated_videos/gold_light_trails_network.mp4";
+import heroVideo from "@assets/generated_videos/gold_particle_sphere.mp4";
 import vrImage from "@assets/virtual-reality_1764951052102.png";
 import { useRef } from "react";
 
@@ -16,7 +16,15 @@ export function Hero() {
       {/* Background */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
-        <video src={heroVideo} autoPlay loop muted playsInline className="w-full h-full object-cover opacity-60" />
+        <video
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-60"
+          style={{ transform: "scale(1.15) translateX(10%)" }}
+        />
       </motion.div>
 
       <div className="w-full px-6 md:px-12 lg:px-24 relative z-20 grid md:grid-cols-12 items-center h-full">
