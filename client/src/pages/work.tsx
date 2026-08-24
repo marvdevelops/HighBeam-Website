@@ -83,12 +83,9 @@ export default function WorkPage() {
           {rest.length > 0 && (
             <div className="grid md:grid-cols-3 gap-4">
               {rest.map((project, index) => (
-                <Link key={index} href={project.externalUrl ? project.externalUrl : `/work/${project.slug}`}>
+                <Link key={index} href={`/work/${project.slug}`}>
                   <motion.a
                     className="group block cursor-pointer"
-                    href={project.externalUrl ?? undefined}
-                    target={project.externalUrl ? "_blank" : undefined}
-                    rel={project.externalUrl ? "noopener noreferrer" : undefined}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.08 }}

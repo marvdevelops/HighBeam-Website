@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/hero";
 import { CapabilitiesTeaser } from "@/components/sections/capabilities-teaser";
 import { WhyHighBeam } from "@/components/sections/why-highbeam";
+import { ClientLogos } from "@/components/sections/client-logos";
 import { ProcessTeaser } from "@/components/sections/process-teaser";
 import { FeaturedWork } from "@/components/sections/featured-work";
 import { CtaStrip } from "@/components/sections/cta-strip";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <CapabilitiesTeaser />
       <WhyHighBeam />
+      <ClientLogos />
       <ProcessTeaser />
       <FeaturedWork />
       <CtaStrip />
