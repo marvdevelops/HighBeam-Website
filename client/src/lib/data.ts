@@ -12,11 +12,13 @@ import kokoThinking from "@assets/koko-screenshot-thinking.png";
 import kokoAnswer from "@assets/koko-screenshot-answer.png";
 import kokoSafety from "@assets/koko-screenshot-safety.png";
 import kokoHero from "@assets/koko-hero.png";
+import kokoThumbnail from "@assets/koko-thumbnail.jpeg";
 import survivalIcon from "@assets/survivalkit-icon.png";
 import survival1 from "@assets/survivalkit-screenshot-1.webp";
 import survival2 from "@assets/survivalkit-screenshot-2.webp";
 import survival3 from "@assets/survivalkit-screenshot-3.webp";
 import survivalHero from "@assets/survivalkit-hero.png";
+import survivalThumbnail from "@assets/survivalkit-thumbnail.jpeg";
 import rootah1 from "@assets/rootah-screenshot-1.jpeg";
 import rootah2 from "@assets/rootah-screenshot-2.jpeg";
 import rootah3 from "@assets/rootah-screenshot-3.jpeg";
@@ -110,59 +112,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    slug: "koko-safe-ai-for-kids",
-    category: "Mobile App",
-    tags: ["iOS", "Android", "AI", "EdTech"],
-    title: "KOKO: Safe AI Companion for Kids",
-    shortDescription: "A chat companion for kids 5 to 10, built with parental controls and safety filtering from day one, not bolted on after launch.",
-    description: "Most AI products for kids are built for engagement first and safety as an afterthought. KoKo is a chat companion for kids 5 to 10 where the parental controls and safety filtering came first, before a single feature got added on top.",
-    theExperience: "A kid's first conversation with KoKo isn't with a chatbot optimized to keep them scrolling. It's with something a parent can actually watch, adjust, and trust, because the guardrails were the starting point of the build, not a patch after launch. That's the whole bet: AI for kids should earn a parent's trust before it earns a kid's attention.",
-    image: kokoHero,
-    images: [kokoHero, kokoHome, kokoThinking, kokoAnswer, kokoSafety],
-    externalUrl: "https://heykoko.app",
-    deliverables: [
-      { title: "Multi-layer safety system", description: "Sensitive topics are gently redirected to trusted adults without disrupting the child's experience." },
-      { title: "Parent dashboard", description: "PIN-protected access with full conversation history, flagged content alerts, and daily time limits." },
-      { title: "On-device privacy", description: "No cloud sync, no account required — all data stays on the family's device." },
-      { title: "Age-adaptive responses", description: "KoKo adjusts language and tone for children aged 5–10 across up to 3 child profiles." }
-    ]
-  },
-  {
-    slug: "survivalkit-emergency-guide",
-    category: "Mobile App",
-    tags: ["iOS", "Utilities", "Offline"],
-    title: "SURVIVALKIT: Offline Emergency Guide",
-    shortDescription: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal. Built for the moment your phone has no bars.",
-    description: "An emergency doesn't wait for a signal bar. SurvivalKit is an offline guide built for the exact moment a Filipino family's phone has no connection and no time to search for help.",
-    theExperience: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal, zero data collected. The design question wasn't \"how do we make this engaging.\" It was \"what does someone need in their hand in the sixty seconds after the power goes out.\" That's a different kind of tech, built for a moment when a person needs it to just work, not to hold their attention.",
-    image: survivalHero,
-    images: [survivalHero, survival1, survival2, survival3],
-    externalUrl: "https://apps.apple.com/us/app/survivalkit-emergency-guide/id6766275190",
-    deliverables: [
-      { title: "Fully offline maps", description: "484+ points of interest within 10km — hospitals, police, evacuation routes — no data needed." },
-      { title: "CPR & tourniquet timers", description: "100 BPM metronome with age-specific guidance; tourniquet alerts at the 2-hour critical mark." },
-      { title: "Family go-bag tracker", description: "Per-member checklist covering adults, children, babies, and pets." },
-      { title: "28 offline survival guides", description: "Covers earthquakes, fire safety, first aid, and more — completely offline." }
-    ]
-  },
-  {
-    slug: "rootah-route-planning",
-    category: "Mobile App",
-    tags: ["iOS", "Android", "Running", "Cycling"],
-    title: "ROOTAH: Route Planning App",
-    shortDescription: "Tap your start, tap your stops. Rootah builds the actual route along real streets and trails, live distance and elevation included.",
-    description: "Runners and cyclists in the Philippines were stuck estimating distances or switching between apps mid-route. Rootah is the first route planning app built and launched in the Philippines, made to solve that exact problem: tap your start, tap your stops, and the app builds the actual route along real streets and trails, not a straight line through a building.",
-    theExperience: "A runner opens Rootah, taps a starting point and a few stops, and watches the route snap to real streets with live distance and elevation updating as they drag each point. Before heading out, they can preview the terrain in 3D to see the hill they're about to commit to. Out on the trail, GPX export sends the route straight to a Garmin or Coros watch, so there's no more guessing and no more switching apps mid-run.",
-    image: rootah1,
-    images: [rootah1, rootah2, rootah3],
-    externalUrl: "https://rootah.com",
-    deliverables: [
-      { title: "Real-street routing", description: "Routes that follow actual roads and trails, with distance and elevation updating live as you build them." },
-      { title: "Terrain you can see before you run it", description: "A 3D flythrough preview so a hill isn't a surprise halfway through." },
-      { title: "Built for the local running community", description: "Club tools for scheduling group runs and managing RSVPs, made for how Filipino running groups actually organize." }
-    ]
-  },
-  {
     slug: "bernardo-carpio-komiks-ar",
     category: "Augmented Reality",
     tags: ["AR", "Publishing", "Mobile App"],
@@ -193,6 +142,59 @@ export const projects: Project[] = [
       { title: "Real crayon, real recognition", description: "AI that read each child's actual coloring choices, not a generic animation." },
       { title: "Instant turnaround", description: "A live event display fast enough to keep up with a line of excited kids." },
       { title: "A brand moment kids actually enjoyed", description: "A banking activation that felt like play, not marketing." }
+    ]
+  },
+  {
+    slug: "koko-safe-ai-for-kids",
+    category: "Mobile App",
+    tags: ["iOS", "Android", "AI", "EdTech"],
+    title: "KOKO: Safe AI Companion for Kids",
+    shortDescription: "A chat companion for kids 5 to 10, built with parental controls and safety filtering from day one, not bolted on after launch.",
+    description: "Most AI products for kids are built for engagement first and safety as an afterthought. KoKo is a chat companion for kids 5 to 10 where the parental controls and safety filtering came first, before a single feature got added on top.",
+    theExperience: "A kid's first conversation with KoKo isn't with a chatbot optimized to keep them scrolling. It's with something a parent can actually watch, adjust, and trust, because the guardrails were the starting point of the build, not a patch after launch. That's the whole bet: AI for kids should earn a parent's trust before it earns a kid's attention.",
+    image: kokoThumbnail,
+    images: [kokoHero, kokoHome, kokoThinking, kokoAnswer, kokoSafety],
+    externalUrl: "https://www.heykoko.app",
+    deliverables: [
+      { title: "Multi-layer safety system", description: "Sensitive topics are gently redirected to trusted adults without disrupting the child's experience." },
+      { title: "Parent dashboard", description: "PIN-protected access with full conversation history, flagged content alerts, and daily time limits." },
+      { title: "On-device privacy", description: "No cloud sync, no account required — all data stays on the family's device." },
+      { title: "Age-adaptive responses", description: "KoKo adjusts language and tone for children aged 5–10 across up to 3 child profiles." }
+    ]
+  },
+  {
+    slug: "rootah-route-planning",
+    category: "Mobile App",
+    tags: ["iOS", "Android", "Running", "Cycling"],
+    title: "ROOTAH: Route Planning App",
+    shortDescription: "Tap your start, tap your stops. Rootah builds the actual route along real streets and trails, live distance and elevation included.",
+    description: "Runners and cyclists in the Philippines were stuck estimating distances or switching between apps mid-route. Rootah is the first route planning app built and launched in the Philippines, made to solve that exact problem: tap your start, tap your stops, and the app builds the actual route along real streets and trails, not a straight line through a building.",
+    theExperience: "A runner opens Rootah, taps a starting point and a few stops, and watches the route snap to real streets with live distance and elevation updating as they drag each point. Before heading out, they can preview the terrain in 3D to see the hill they're about to commit to. Out on the trail, GPX export sends the route straight to a Garmin or Coros watch, so there's no more guessing and no more switching apps mid-run.",
+    image: rootah1,
+    images: [rootah1, rootah2, rootah3],
+    externalUrl: "https://rootah.com",
+    deliverables: [
+      { title: "Real-street routing", description: "Routes that follow actual roads and trails, with distance and elevation updating live as you build them." },
+      { title: "Terrain you can see before you run it", description: "A 3D flythrough preview so a hill isn't a surprise halfway through." },
+      { title: "Built for the local running community", description: "Club tools for scheduling group runs and managing RSVPs, made for how Filipino running groups actually organize." }
+    ]
+  },
+  {
+    slug: "survivalkit-emergency-guide",
+    category: "Mobile App",
+    tags: ["iOS", "Utilities", "Offline"],
+    title: "SURVIVALKIT: Offline Emergency Guide",
+    shortDescription: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal. Built for the moment your phone has no bars.",
+    description: "An emergency doesn't wait for a signal bar. SurvivalKit is an offline guide built for the exact moment a Filipino family's phone has no connection and no time to search for help.",
+    theExperience: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal, zero data collected. The design question wasn't \"how do we make this engaging.\" It was \"what does someone need in their hand in the sixty seconds after the power goes out.\" That's a different kind of tech, built for a moment when a person needs it to just work, not to hold their attention.",
+    image: survivalThumbnail,
+    images: [survivalHero, survival1, survival2, survival3],
+    externalUrl: "https://apps.apple.com/us/app/survivalkit-emergency-guide/id6766275190",
+    deliverables: [
+      { title: "Fully offline maps", description: "484+ points of interest within 10km — hospitals, police, evacuation routes — no data needed." },
+      { title: "CPR & tourniquet timers", description: "100 BPM metronome with age-specific guidance; tourniquet alerts at the 2-hour critical mark." },
+      { title: "Family go-bag tracker", description: "Per-member checklist covering adults, children, babies, and pets." },
+      { title: "28 offline survival guides", description: "Covers earthquakes, fire safety, first aid, and more — completely offline." }
     ]
   }
 ];
