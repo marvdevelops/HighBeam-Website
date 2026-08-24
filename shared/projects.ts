@@ -52,7 +52,7 @@ export const projectsMeta: ProjectMeta[] = [
     slug: "bernardo-carpio-komiks-ar",
     title: "BERNARDO CARPIO KOMIKS: Augmented Reality Comics",
     shortDescription: "A phone camera turns the printed page into a 3D scene. The first AR reading experience built for Filipino comics.",
-    ogImage: "/opengraph.jpg"
+    ogImage: "/og-images/bernardo-carpio.png"
   }
 ];
 

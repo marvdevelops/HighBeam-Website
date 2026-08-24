@@ -119,6 +119,23 @@ export default function ProjectDetailPage() {
               </>
             )}
 
+            {project.images && project.images.length > 1 && (
+              <div className="mt-16 pt-12 border-t border-zinc-800">
+                <h3 className="text-primary font-bold uppercase tracking-widest text-sm mb-8">Gallery</h3>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {project.images.slice(1).map((img, index) => (
+                    <div key={index} className="overflow-hidden bg-zinc-900">
+                      <img
+                        src={img}
+                        alt={`${project.title} - Image ${index + 2}`}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {project.externalUrl && (
               <div className="mt-16 pt-12 border-t border-zinc-800">
                 <a href={project.externalUrl} target="_blank" rel="noopener noreferrer">

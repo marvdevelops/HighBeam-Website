@@ -22,6 +22,7 @@ import carpioAr1 from "@assets/bernardo-carpio-ar-1.png";
 import carpioAr2 from "@assets/bernardo-carpio-ar-2.png";
 import carpioAr3 from "@assets/bernardo-carpio-ar-3.png";
 import carpioCover from "@assets/bernardo-carpio-cover.png";
+import carpioHero from "@assets/bernardo-carpio-hero.png";
 
 export interface Deliverable {
   title: string;
@@ -164,8 +165,8 @@ export const projects: Project[] = [
     shortDescription: "A phone camera turns the printed page into a 3D scene. The first AR reading experience built for Filipino comics.",
     description: "A comic book is usually a flat page you read once and put down. We built an AR layer for Bernardo Carpio Komiks that lets the characters step off the page in 3D, using nothing but a phone camera pointed at the panel.",
     theExperience: "A reader opens the free companion app, points their phone at a page, and the character stands up off the paper in full 3D, right on the table in front of them. It's a first for Filipino comics. The moment that matters isn't the tech working, it's a reader realizing the story they've been reading is suddenly standing in their own living room.",
-    image: carpioAr1,
-    images: [carpioAr1, carpioAr2, carpioAr3, carpioCover],
+    image: carpioHero,
+    images: [carpioHero, carpioAr1, carpioAr2, carpioAr3, carpioCover],
     deliverables: [
       { title: "First-of-its-kind AR reading", description: "A phone-camera experience that turns a printed page into a 3D scene." },
       { title: "Built for a local story", description: "An experience made specifically for a Filipino character and a Filipino audience, not a generic AR template." },
