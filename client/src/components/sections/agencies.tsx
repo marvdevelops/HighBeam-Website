@@ -26,10 +26,10 @@ export function Agencies() {
       <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
         <div>
           <p className="text-xl text-zinc-300 leading-relaxed mb-8">
-            HighBeam partners with event, creative, and marketing agencies to power unforgettable experiences behind the scenes. We act as your creative technology team — elevating your concepts with premium digital execution.
+            HighBeam partners with event, creative, and marketing agencies as the technology team behind the scenes. You pitch the concept, we make sure it survives contact with a live crowd.
           </p>
           <p className="text-xl font-medium text-white italic border-l-2 border-primary pl-4 mb-12">
-            "If your client wants something interactive, immersive, or bold, we'll help you bring it to life."
+            "If your client wants something interactive, immersive, or bold, we'll help you build it, on time and on brand."
           </p>
           <Link href="/contact">
             <Button className="bg-primary text-black hover:bg-white hover:text-black font-bold rounded-none px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95">

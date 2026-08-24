@@ -4,11 +4,11 @@ import { Link } from "wouter";
 import { ArrowUpRight, Handshake } from "lucide-react";
 
 const capabilities = [
-  { title: "Interactive Experiences", description: "Digital interactions that invite exploration — touch, movement, gesture, creative input, or play. Built to capture attention and encourage engagement." },
-  { title: "Immersive Technologies", description: "Experiences that draw people into new digital or spatial environments. Perfect for storytelling, branding, and emotional impact." },
-  { title: "Engagement Systems", description: "Creative tools that transform visitors into participants — enabling expression, interaction, and deeper connection." },
-  { title: "Branded Installations", description: "Large-scale digital environments that transform physical spaces into living, interactive canvases." },
-  { title: "Creative Technology Development", description: "Concept-to-launch development for agencies, brands, and event organizers who want something unique, refined, and fully custom." },
+  { title: "Interactive Digital Experiences", description: "Touchscreens, motion sensors, and gesture-based kiosks that turn a passerby into a participant in under five seconds." },
+  { title: "Immersive Technologies", description: "AR and VR builds like the Q-CERT cybersecurity trainer: put someone inside the scenario instead of walking them through a slide." },
+  { title: "Engagement Systems", description: "Fan walls, feedback walls, and live data displays that turn a crowd's input into something they can see happen in real time, like the FIFA jersey wall or the NCSA feedback mosaic." },
+  { title: "Branded Installations", description: "Large-scale digital environments that transform physical spaces into living, interactive canvases that elevate any event." },
+  { title: "Creative Technology Development", description: "From first sketch to opening night, we run the whole build for agencies, brands, and event teams who want something nobody else is running that day." },
 ];
 
 const agencyBenefits = [
@@ -27,11 +27,11 @@ export function Capabilities() {
         <div className="flex flex-col md:flex-row justify-between items-end gap-6">
           <h2 className="text-4xl md:text-5xl font-bold text-white max-w-2xl">What We Create</h2>
           <p className="text-zinc-400 max-w-md text-right hidden md:block">
-            HighBeam designs and develops interactive and immersive digital experiences tailored to brand stories, event goals, and audience engagement.
+            Five ways we build experiences, from a single touchscreen kiosk to a stadium-scale activation. All of it engineered to work the first time, in front of a live crowd.
           </p>
         </div>
         <p className="text-zinc-400 mt-4 md:hidden">
-          HighBeam designs and develops interactive and immersive digital experiences tailored to brand stories, event goals, and audience engagement.
+          Five ways we build experiences, from a single touchscreen kiosk to a stadium-scale activation. All of it engineered to work the first time, in front of a live crowd.
         </p>
       </div>
 
@@ -66,10 +66,10 @@ export function Capabilities() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">For Agencies</h2>
             <p className="text-lg text-zinc-400 leading-relaxed mb-6">
-              HighBeam partners with event, creative, and marketing agencies to power unforgettable experiences behind the scenes. We act as your creative technology team — elevating your concepts with premium digital execution.
+              HighBeam partners with event, creative, and marketing agencies as the technology team behind the scenes. You pitch the concept, we make sure it survives contact with a live crowd.
             </p>
             <p className="text-xl font-medium text-white italic border-l-2 border-primary pl-4">
-              "If your client wants something interactive, immersive, or bold, we'll help you bring it to life."
+              "If your client wants something interactive, immersive, or bold, we'll help you build it, on time and on brand."
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export function Capabilities() {
 
       <div className="mt-24 border-t border-zinc-900 pt-10">
         <p className="text-2xl font-display font-bold text-zinc-700 uppercase tracking-widest text-center">
-          If it's interactive, immersive, or experiential — we can build it.
+          If it's interactive, immersive, or experiential, that's what we build.
         </p>
       </div>
     </Section>
