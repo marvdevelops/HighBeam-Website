@@ -16,7 +16,7 @@ export function ProcessTeaser() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 border border-zinc-800 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
+      <div className="grid md:grid-cols-2 max-w-4xl border border-zinc-800 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
         {steps.map((step, index) => (
           <motion.div
             key={index}
@@ -30,7 +30,7 @@ export function ProcessTeaser() {
               {step.number}
             </div>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{step.title}</h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">{step.description}</p>
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">{step.description}</p>
             <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500" />
           </motion.div>
         ))}
