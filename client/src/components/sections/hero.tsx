@@ -49,7 +49,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-zinc-400 max-w-xl leading-relaxed">
-            HighBeam builds interactive and immersive digital experiences that bring brands to life — transforming events, activations, and installations into moments people remember.
+            We build the booth people line up for twice. AR, VR, and interactive installations for events, activations, and brand experiences.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
