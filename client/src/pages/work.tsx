@@ -16,7 +16,7 @@ export default function WorkPage() {
             <span className="text-[10px] uppercase tracking-[0.4em] text-primary border-l-2 border-primary pl-3 mb-4 block">Our Work</span>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Work That Speaks for Itself</h2>
             <p className="text-xl text-zinc-400 leading-relaxed">
-              Six projects below. Each one had a real deadline, a real crowd, and no room to fail on launch day. Click into any of them for how it actually got built.
+              Seven projects below. Each one had a real deadline, a real crowd, and no room to fail on launch day. Click into any of them for how it actually got built.
             </p>
           </div>
 

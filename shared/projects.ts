@@ -41,6 +41,12 @@ export const projectsMeta: ProjectMeta[] = [
     title: "SURVIVALKIT: Offline Emergency Guide",
     shortDescription: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal. Built for the moment your phone has no bars.",
     ogImage: "/opengraph.jpg"
+  },
+  {
+    slug: "rootah-route-planning",
+    title: "ROOTAH: Route Planning App",
+    shortDescription: "Tap your start, tap your stops. Rootah builds the actual route along real streets and trails, live distance and elevation included.",
+    ogImage: "/opengraph.jpg"
   }
 ];
 

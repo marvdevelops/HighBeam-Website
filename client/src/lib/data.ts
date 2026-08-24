@@ -15,6 +15,9 @@ import survivalIcon from "@assets/survivalkit-icon.png";
 import survival1 from "@assets/survivalkit-screenshot-1.webp";
 import survival2 from "@assets/survivalkit-screenshot-2.webp";
 import survival3 from "@assets/survivalkit-screenshot-3.webp";
+import rootah1 from "@assets/rootah-screenshot-1.jpeg";
+import rootah2 from "@assets/rootah-screenshot-2.jpeg";
+import rootah3 from "@assets/rootah-screenshot-3.jpeg";
 
 export interface Deliverable {
   title: string;
@@ -130,6 +133,23 @@ export const projects: Project[] = [
       { title: "CPR & tourniquet timers", description: "100 BPM metronome with age-specific guidance; tourniquet alerts at the 2-hour critical mark." },
       { title: "Family go-bag tracker", description: "Per-member checklist covering adults, children, babies, and pets." },
       { title: "28 offline survival guides", description: "Covers earthquakes, fire safety, first aid, and more — completely offline." }
+    ]
+  },
+  {
+    slug: "rootah-route-planning",
+    category: "Mobile App",
+    tags: ["iOS", "Android", "Running", "Cycling"],
+    title: "ROOTAH: Route Planning App",
+    shortDescription: "Tap your start, tap your stops. Rootah builds the actual route along real streets and trails, live distance and elevation included.",
+    description: "Runners and cyclists in the Philippines were stuck estimating distances or switching between apps mid-route. Rootah is the first route planning app built and launched in the Philippines, made to solve that exact problem: tap your start, tap your stops, and the app builds the actual route along real streets and trails, not a straight line through a building.",
+    theExperience: "A runner opens Rootah, taps a starting point and a few stops, and watches the route snap to real streets with live distance and elevation updating as they drag each point. Before heading out, they can preview the terrain in 3D to see the hill they're about to commit to. Out on the trail, GPX export sends the route straight to a Garmin or Coros watch, so there's no more guessing and no more switching apps mid-run.",
+    image: rootah1,
+    images: [rootah1, rootah2, rootah3],
+    externalUrl: "https://rootah.com",
+    deliverables: [
+      { title: "Real-street routing", description: "Routes that follow actual roads and trails, with distance and elevation updating live as you build them." },
+      { title: "Terrain you can see before you run it", description: "A 3D flythrough preview so a hill isn't a surprise halfway through." },
+      { title: "Built for the local running community", description: "Club tools for scheduling group runs and managing RSVPs, made for how Filipino running groups actually organize." }
     ]
   }
 ];
