@@ -49,7 +49,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-zinc-400 max-w-xl leading-relaxed">
-            We build the booth people line up for twice. AR, VR, and interactive installations for events, activations, and brand experiences.
+            We craft digital experiences that tell a story and leave a lasting memory. AR, VR, interactive installations, mobile apps, and web platforms, all built around the same idea: technology that connects with people, not just their screens.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
