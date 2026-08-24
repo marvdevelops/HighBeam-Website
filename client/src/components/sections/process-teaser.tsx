@@ -1,5 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "wouter";
 
 const steps = [
   { number: "01", title: "Discover", description: "What's this for, who shows up, and what do you want them to do when they get there. That's the whole first conversation." },
@@ -16,7 +18,7 @@ export function ProcessTeaser() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 max-w-4xl border border-zinc-800 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
+      <div className="grid md:grid-cols-3 border border-zinc-800 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
         {steps.map((step, index) => (
           <motion.div
             key={index}
@@ -34,6 +36,23 @@ export function ProcessTeaser() {
             <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500" />
           </motion.div>
         ))}
+
+        <Link href="/process">
+          <motion.a
+            className="group relative p-8 flex flex-col justify-center items-start hover:bg-primary/5 transition-colors cursor-pointer"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: steps.length * 0.08 }}
+            viewport={{ once: true }}
+          >
+            <div className="w-12 h-12 rounded-full border border-zinc-700 group-hover:border-primary flex items-center justify-center mb-6 transition-colors">
+              <ArrowUpRight className="w-5 h-5 text-zinc-400 group-hover:text-primary transition-colors" />
+            </div>
+            <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors mb-3">See the Full Process</h3>
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">Five stages in total, from first conversation to launch day.</p>
+            <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500" />
+          </motion.a>
+        </Link>
       </div>
     </Section>
   );
