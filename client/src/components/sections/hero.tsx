@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroVideo from "@assets/generated_videos/abstract_dark_space_background_with_subtle_stars_and_nebula.mp4";
+import heroVideo from "@assets/generated_videos/gold_light_trails_network.mp4";
 import vrImage from "@assets/virtual-reality_1764951052102.png";
 import { useRef } from "react";
 
@@ -32,16 +32,6 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-6 md:col-span-9 lg:col-span-8 z-30 pt-20 md:pt-0"
         >
-          {/* Eyebrow */}
-          <motion.span
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-block text-[10px] uppercase tracking-[0.4em] text-primary border-l-2 border-primary pl-3"
-          >
-            Experiential Tech Studio
-          </motion.span>
-
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter text-white uppercase">
             Turn Your <br />
             <span className="text-stroke">Vision</span> Into <br />
