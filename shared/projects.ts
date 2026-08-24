@@ -47,6 +47,12 @@ export const projectsMeta: ProjectMeta[] = [
     title: "ROOTAH: Route Planning App",
     shortDescription: "Tap your start, tap your stops. Rootah builds the actual route along real streets and trails, live distance and elevation included.",
     ogImage: "/opengraph.jpg"
+  },
+  {
+    slug: "bernardo-carpio-komiks-ar",
+    title: "BERNARDO CARPIO KOMIKS: Augmented Reality Comics",
+    shortDescription: "A phone camera turns the printed page into a 3D scene. The first AR reading experience built for Filipino comics.",
+    ogImage: "/opengraph.jpg"
   }
 ];
 

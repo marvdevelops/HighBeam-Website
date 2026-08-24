@@ -18,6 +18,10 @@ import survival3 from "@assets/survivalkit-screenshot-3.webp";
 import rootah1 from "@assets/rootah-screenshot-1.jpeg";
 import rootah2 from "@assets/rootah-screenshot-2.jpeg";
 import rootah3 from "@assets/rootah-screenshot-3.jpeg";
+import carpioAr1 from "@assets/bernardo-carpio-ar-1.png";
+import carpioAr2 from "@assets/bernardo-carpio-ar-2.png";
+import carpioAr3 from "@assets/bernardo-carpio-ar-3.png";
+import carpioCover from "@assets/bernardo-carpio-cover.png";
 
 export interface Deliverable {
   title: string;
@@ -150,6 +154,22 @@ export const projects: Project[] = [
       { title: "Real-street routing", description: "Routes that follow actual roads and trails, with distance and elevation updating live as you build them." },
       { title: "Terrain you can see before you run it", description: "A 3D flythrough preview so a hill isn't a surprise halfway through." },
       { title: "Built for the local running community", description: "Club tools for scheduling group runs and managing RSVPs, made for how Filipino running groups actually organize." }
+    ]
+  },
+  {
+    slug: "bernardo-carpio-komiks-ar",
+    category: "Augmented Reality",
+    tags: ["AR", "Publishing", "Mobile App"],
+    title: "BERNARDO CARPIO KOMIKS: Augmented Reality Comics",
+    shortDescription: "A phone camera turns the printed page into a 3D scene. The first AR reading experience built for Filipino comics.",
+    description: "A comic book is usually a flat page you read once and put down. We built an AR layer for Bernardo Carpio Komiks that lets the characters step off the page in 3D, using nothing but a phone camera pointed at the panel.",
+    theExperience: "A reader opens the free companion app, points their phone at a page, and the character stands up off the paper in full 3D, right on the table in front of them. It's a first for Filipino comics. The moment that matters isn't the tech working, it's a reader realizing the story they've been reading is suddenly standing in their own living room.",
+    image: carpioAr1,
+    images: [carpioAr1, carpioAr2, carpioAr3, carpioCover],
+    deliverables: [
+      { title: "First-of-its-kind AR reading", description: "A phone-camera experience that turns a printed page into a 3D scene." },
+      { title: "Built for a local story", description: "An experience made specifically for a Filipino character and a Filipino audience, not a generic AR template." },
+      { title: "A reason to pick the book back up", description: "A feature that gives a comic a second life after the first read." }
     ]
   }
 ];
