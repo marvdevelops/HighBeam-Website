@@ -18,7 +18,7 @@ export function ClientLogos() {
     <section className="bg-black border-t border-b border-zinc-900 py-16 md:py-20">
       <div className="w-full px-8 md:px-16 lg:px-24">
         <span className="text-[10px] uppercase tracking-[0.4em] text-primary border-l-2 border-primary pl-3 mb-12 block">
-          Trusted By
+          We Worked With
         </span>
 
         <div className="flex flex-wrap items-center justify-between gap-x-12 gap-y-10">

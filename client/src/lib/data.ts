@@ -7,12 +7,12 @@ import ncsaImage3 from "@assets/Gemini_Generated_Image_oqm6a0oqm6a0oqm6_17649953
 import qcertImage from "@assets/cover_1_1765200427526.jpg";
 import detail2 from "@assets/generated_images/hands_on_interactive_surface.png";
 import detail4 from "@assets/generated_images/holographic_texture_detail.png";
-import kokoHome from "@assets/koko-screenshot-home.png";
-import kokoThinking from "@assets/koko-screenshot-thinking.png";
-import kokoAnswer from "@assets/koko-screenshot-answer.png";
-import kokoSafety from "@assets/koko-screenshot-safety.png";
 import kokoHero from "@assets/koko-hero.png";
 import kokoThumbnail from "@assets/koko-thumbnail.jpeg";
+import kokoHomeNew from "@assets/koko-home-new.jpeg";
+import kokoGreeting from "@assets/koko-greeting.jpeg";
+import kokoThinkingNew from "@assets/koko-thinking-new.jpeg";
+import kokoPhotosynthesis from "@assets/koko-photosynthesis.jpeg";
 import survivalIcon from "@assets/survivalkit-icon.png";
 import survivalHero from "@assets/survivalkit-hero.png";
 import survivalThumbnail from "@assets/survivalkit-thumbnail.jpeg";
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     description: "Most AI products for kids are built for engagement first and safety as an afterthought. KoKo is a chat companion for kids 5 to 10 where the parental controls and safety filtering came first, before a single feature got added on top.",
     theExperience: "A kid's first conversation with KoKo isn't with a chatbot optimized to keep them scrolling. It's with something a parent can actually watch, adjust, and trust, because the guardrails were the starting point of the build, not a patch after launch. That's the whole bet: AI for kids should earn a parent's trust before it earns a kid's attention.",
     image: kokoThumbnail,
-    images: [kokoHero, kokoHome, kokoThinking, kokoAnswer, kokoSafety],
+    images: [kokoHero, kokoHomeNew, kokoGreeting, kokoThinkingNew, kokoPhotosynthesis],
     externalUrl: "https://www.heykoko.app",
     deliverables: [
       { title: "Multi-layer safety system", description: "Sensitive topics are gently redirected to trusted adults without disrupting the child's experience." },
