@@ -2,10 +2,8 @@ import { Section } from "@/components/ui/section";
 import { motion } from "framer-motion";
 
 const steps = [
-  { number: "01", title: "Discover", description: "We explore your goals, your brand, and the emotions you want to create." },
-  { number: "02", title: "Design", description: "We craft the concept, interactions, visual direction, and flow of the experience." },
-  { number: "03", title: "Build", description: "We develop a polished, event-ready experience engineered to perform." },
-  { number: "04", title: "Launch", description: "We support your activation end-to-end, ensuring everything works perfectly on the day it matters." },
+  { number: "01", title: "Discover", description: "What's this for, who shows up, and what do you want them to do when they get there. That's the whole first conversation." },
+  { number: "02", title: "Design", description: "Interactions, user flow, visual direction, and the story that ties them together get mapped out before a line of code gets written." },
 ];
 
 export function ProcessTeaser() {
@@ -18,7 +16,7 @@ export function ProcessTeaser() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-4 border border-zinc-800 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
+      <div className="grid md:grid-cols-2 border border-zinc-800 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
         {steps.map((step, index) => (
           <motion.div
             key={index}

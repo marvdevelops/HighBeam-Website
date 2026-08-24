@@ -18,7 +18,7 @@ export function WhyHighBeam() {
             Technology That Feels Alive
           </h2>
           <p className="text-xl text-black/70 leading-relaxed">
-            We combine imagination, engineering, and storytelling to deliver experiences that run flawlessly when it matters most.
+            We've run live installations in front of a stadium crowd and a national cybersecurity conference. Neither had a second chance if something broke on stage, so nothing we ship does either.
           </p>
         </div>
 

@@ -15,7 +15,7 @@ export function CtaStrip() {
           </div>
           <div className="flex flex-col gap-4 items-start shrink-0">
             <p className="text-lg text-black/70 max-w-xs">
-              Tell us the experience you want to create — we'll bring it to life.
+              Tell us what you're building. We'll tell you if it's a fit, and if it is, what it'll take to make it real.
             </p>
             <Link href="/contact">
               <Button className="bg-black text-white hover:bg-white hover:text-black font-bold rounded-none px-10 py-6 text-lg border-0 transition-all hover:scale-105 active:scale-95">

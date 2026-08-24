@@ -4,9 +4,9 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
 
 const features = [
-  { title: "Interactive Digital Experiences", description: "Digital interactions that invite exploration — touch, movement, gesture, creative input, or play. Built to capture attention and encourage engagement." },
-  { title: "Immersive Technologies", description: "Experiences that draw people into new digital or spatial environments. Perfect for storytelling, branding, and emotional impact." },
-  { title: "Engagement Systems", description: "Creative tools that transform visitors into participants — enabling expression, interaction, and deeper connection with your brand." },
+  { title: "Interactive Digital Experiences", description: "Touchscreens, motion sensors, and gesture-based kiosks that turn a passerby into a participant in under five seconds." },
+  { title: "Immersive Technologies", description: "AR and VR builds like the Q-CERT cybersecurity trainer: put someone inside the scenario instead of walking them through a slide." },
+  { title: "Engagement Systems", description: "Fan walls, feedback walls, and live data displays that turn a crowd's input into something they can see happen in real time, like the FIFA jersey wall or the NCSA feedback mosaic." },
   { title: "Branded Installations", description: "Large-scale digital environments that transform physical spaces into living, interactive canvases that elevate any event." },
 ];
 

@@ -41,14 +41,14 @@ export const projects: Project[] = [
     category: "Interactive Installation",
     title: "FEEDBACK WALL: Where Every Insight Becomes Part of the Big Picture",
     shortDescription: "Attendees sketched on a kiosk. Their drawing showed up on a giant shared wall in under a second, in front of the whole conference floor.",
-    description: "HighBeam developed an interactive Feedback Wall for a major cybersecurity forum. The goal was simple: help people feel like their ideas mattered and show the conversations of the room coming to life in real time.",
-    theExperience: "We built a two-screen setup: a 21-inch touchscreen kiosk where attendees could draw or write, and a large LED wall that turned every submission into part of a shared mosaic in real time. People stopped mid-conversation when they saw their own sketch appear on the big screen. That's the moment the installation was built for.",
+    description: "Most conference feedback happens in a survey nobody opens after the event. We built something people did while the conversation was still happening. Attendees sketched or wrote on a kiosk and watched it appear on a giant shared wall in front of the whole room, in real time.",
+    theExperience: "A 21-inch touchscreen kiosk on one side, a large LED wall on the other. Someone would draw a quick doodle or write a note, and within a second it showed up on the wall for the entire floor to see. People stopped mid-conversation to look up. A few went back for a second submission once they saw the first one land. That's the moment the installation was actually built for: not the tech working, but a room full of strangers realizing they were all adding to the same picture.",
     image: ncsaImage3,
     images: [ncsaImage1, ncsaImage2, ncsaImage3],
     deliverables: [
-      { title: "An inviting input experience", description: "A guided, secure flow that encouraged attendees to take part without hesitation." },
-      { title: "A live visual mosaic", description: "A responsive display that transformed every insight into motion and color in real time." },
-      { title: "A stronger sense of community", description: "A centerpiece that made participants feel heard and helped the event feel more collaborative and human." }
+      { title: "An inviting input experience", description: "A guided, secure flow that let people take part without needing an explanation first." },
+      { title: "A live visual mosaic", description: "A wall that turned individual input into something the whole room shared, instantly." },
+      { title: "A stronger sense of community", description: "People at a cybersecurity conference, of all places, ended up talking to strangers because of it." }
     ]
   },
   {
@@ -56,14 +56,14 @@ export const projects: Project[] = [
     category: "Fan Activation",
     title: "FIFA ARAB CUP FAN WALL: Your Name, Your Jersey, Your Moment",
     shortDescription: "Fans typed in a name and number on their phone. Their custom jersey lit up a stadium-sized screen seconds later.",
-    description: "For FIFA Arab Cup Qatar 2025, HighBeam built a fan activation that put every visitor's name on the biggest screen in the stadium.",
-    theExperience: "Through a mobile web app, fans typed in their name, team, and jersey number. Within seconds their custom jersey appeared on a stadium-sized Fan Wall, ready for a photo. Groups gathered around to watch their friend's jersey go up, phones out before the app even finished loading.",
+    description: "A phone screen is where most sports fandom lives now, alone, scrolling. We built the opposite: a way for a fan's name to end up on the biggest screen in the stadium, in front of everyone around them.",
+    theExperience: "Fans typed their name, team, and jersey number into a mobile web app. Seconds later their custom jersey appeared on a stadium-sized Fan Wall. The part worth noting isn't the speed, it's what happened next: groups of friends gathered around a phone to watch one person's jersey go up, phones already out to capture it before the app had even finished loading. The tech's job was to get out of the way fast enough for that moment to happen.",
     image: fifaImage1,
     images: [fifaImage1, fifaImage2],
     deliverables: [
-      { title: "Simple and fast personalization", description: "A smooth mobile flow that made custom jerseys appear almost instantly." },
-      { title: "Designed for real excitement", description: "Bold visuals that looked great in photos and encouraged fans to share their moment." },
-      { title: "Built for large crowds", description: "A reliable approval system that handled heavy foot traffic without breaking the rhythm of the event." }
+      { title: "Simple and fast personalization", description: "A mobile flow quick enough that the moment didn't get lost waiting for a loading screen." },
+      { title: "Designed for real excitement", description: "Visuals bold enough to be worth pulling out a phone for." },
+      { title: "Built for large crowds", description: "An approval system that held up under heavy foot traffic without slowing the room down." }
     ]
   },
   {
@@ -71,14 +71,14 @@ export const projects: Project[] = [
     category: "Experiential Activation",
     title: "DFI GOLDEN VOICE STUDIO: Step In, Speak Up, Star in Your Own Scene",
     shortDescription: "Festival-goers stepped into a booth, dubbed a real film scene, and walked out with a clip worth sending to their group chat.",
-    description: "HighBeam developed the Golden Voice Studio to give visitors a chance to experience the fun of dubbing their own movie scene. It was designed to be playful, expressive, and memorable.",
-    theExperience: "Guests stepped up to the kiosk, chose a movie clip, then entered a small recording booth to perform their own voiceover. Playback was instant. People laughed at their first take, then asked to redo it, then called a friend over to watch. Nobody had to be told to try it twice, that's the tell that a booth is actually working.",
+    description: "Dubbing a movie scene used to be something only a professional voice actor got to do. We built a booth at the Doha Film Institute where any festival-goer could step in and do it themselves.",
+    theExperience: "Guests picked a movie clip, stepped into a small recording booth, and performed the voiceover live. Playback was instant. What we noticed watching it run: almost nobody left after their first take. They laughed at themselves, asked to redo it, then went and grabbed a friend to watch. Nobody had to be told to try it twice. That's the actual tell that something is working: not a satisfaction score, a person choosing to do it again on their own.",
     image: dfiImage,
     images: [dfiImage, detail4, detail2],
     deliverables: [
-      { title: "Friendly bilingual interface", description: "An easy to use design that made both Arabic and English speaking visitors feel comfortable." },
-      { title: "Smooth real time processing", description: "Audio and video handling that stayed responsive during constant use." },
-      { title: "A takeaway people were proud of", description: "Personalized dubbed clips that participants saved, shared, and remembered." }
+      { title: "Friendly bilingual interface", description: "A design simple enough that both Arabic and English speakers felt at ease immediately." },
+      { title: "Smooth real time processing", description: "Audio and video that kept up under constant back-to-back use, no waiting between guests." },
+      { title: "A takeaway people were proud of", description: "A clip people actually wanted to send to someone, not just a receipt that they'd shown up." }
     ]
   },
   {
@@ -86,14 +86,14 @@ export const projects: Project[] = [
     category: "VR Training",
     title: "QCERT VR TRAINING: Learning to Respond, One Real Scenario at a Time",
     shortDescription: "Trainees put on a headset and had to make real incident-response decisions under a simulated attack, not read about them in a slide deck.",
-    description: "HighBeam developed a Virtual Reality training experience for QCert Qatar that helps people understand what it really feels like to face a cyber security attack. Instead of reading instructions or watching videos, users step inside a realistic scenario where they must make decisions, follow proper steps, and respond under pressure.",
-    theExperience: "Trainees put on the headset expecting a demo and left having made real incident-response calls under time pressure. You could see the shift about ninety seconds in: fewer questions to the booth staff, more focus on the screen. That's what training under simulated pressure looks like versus a slide deck.",
+    description: "Cybersecurity training usually means reading a slide deck and clicking next. We built a VR simulation for QCert Qatar where trainees had to live through a realistic attack scenario and make real decisions under pressure, not memorize a checklist.",
+    theExperience: "Trainees put the headset on expecting a demo. What we watched happen instead: about ninety seconds in, the questions to booth staff stopped and the focus on the screen sharpened. People were making calls under simulated pressure, the same kind of pressure a real incident creates. That shift, from passive to alert, is the actual difference between training that sticks and training that gets forgotten by lunch.",
     image: qcertImage,
     images: [qcertImage],
     deliverables: [
-      { title: "Immersive, high fidelity simulation", description: "A VR environment designed to mirror real cyber attack scenarios without overwhelming the learner." },
-      { title: "Step by step guided learning", description: "A clear flow that walks users through each phase of incident response, helping them understand what to do and why it matters." },
-      { title: "A safe space to practice under pressure", description: "Users experience the urgency of a real incident while knowing they can learn, try again, and grow their confidence." }
+      { title: "Immersive, high fidelity simulation", description: "A VR environment realistic enough to trigger real decision-making, not just observation." },
+      { title: "Step by step guided learning", description: "A flow that built understanding of why each step mattered, not just what to click." },
+      { title: "A safe space to practice under pressure", description: "Room to get it wrong, learn, and try again before a real incident ever tests them." }
     ]
   },
   {
@@ -102,8 +102,8 @@ export const projects: Project[] = [
     tags: ["iOS", "Android", "AI", "EdTech"],
     title: "KOKO: Safe AI Companion for Kids",
     shortDescription: "A chat companion for kids 5 to 10, built with parental controls and safety filtering from day one, not bolted on after launch.",
-    description: "HighBeam built KoKo — a safe AI companion designed for children aged 5 to 10. In a world where AI is everywhere, parents needed something they could actually trust. KoKo answers questions, tells stories, and encourages curiosity — all within a carefully designed safety layer that redirects sensitive topics and keeps parents in control.",
-    theExperience: "KoKo features a friendly octopus mascot that children immediately connect with. Voice and text chat feel natural, while a multi-layer safety filter works silently in the background. Parents get a PIN-protected dashboard with full conversation history, flagged content alerts, and daily session limits — without the app ever needing to sync data to the cloud.\n\nThe result is an AI experience that children love and parents trust.",
+    description: "Most AI products for kids are built for engagement first and safety as an afterthought. KoKo is a chat companion for kids 5 to 10 where the parental controls and safety filtering came first, before a single feature got added on top.",
+    theExperience: "A kid's first conversation with KoKo isn't with a chatbot optimized to keep them scrolling. It's with something a parent can actually watch, adjust, and trust, because the guardrails were the starting point of the build, not a patch after launch. That's the whole bet: AI for kids should earn a parent's trust before it earns a kid's attention.",
     image: kokoHome,
     images: [kokoHome, kokoThinking, kokoAnswer, kokoSafety],
     externalUrl: "https://heykoko.app",
@@ -120,8 +120,8 @@ export const projects: Project[] = [
     tags: ["iOS", "Utilities", "Offline"],
     title: "SURVIVALKIT: Offline Emergency Guide",
     shortDescription: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal. Built for the moment your phone has no bars.",
-    description: "HighBeam developed SurvivalKit — an emergency preparedness app designed to work entirely without internet. When disaster strikes, cell networks fail first. SurvivalKit ensures families have everything they need: offline maps with hospitals, police, and evacuation points; step-by-step first aid; go-bag checklists per family member; and one-tap access to emergency contacts.",
-    theExperience: "The app covers the moments that matter most. A CPR timer beats at 100 BPM with age-specific guidance. A tourniquet timer alerts at the 2-hour critical mark. Twenty-eight offline survival guides walk users through earthquakes, fire safety, and first aid without needing a single bar of signal.\n\nSurvivalKit launched on the App Store and is available for iOS 15.1 and above.",
+    description: "An emergency doesn't wait for a signal bar. SurvivalKit is an offline guide built for the exact moment a Filipino family's phone has no connection and no time to search for help.",
+    theExperience: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal, zero data collected. The design question wasn't \"how do we make this engaging.\" It was \"what does someone need in their hand in the sixty seconds after the power goes out.\" That's a different kind of tech, built for a moment when a person needs it to just work, not to hold their attention.",
     image: survival1,
     images: [survival1, survival2, survival3],
     externalUrl: "https://apps.apple.com/us/app/survivalkit-emergency-guide/id6766275190",
