@@ -34,30 +34,43 @@ export default function ProjectDetailPage() {
   return (
     <Layout>
       <article>
-        {/* Hero image slider */}
+        {/* Hero media */}
         <div ref={ref} className="w-full h-[80vh] relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 z-20 pointer-events-none" />
 
-          <Carousel className="w-full h-full">
-            <CarouselContent className="h-full ml-0">
-              {(project.images ?? [project.image]).map((img, index) => (
-                <CarouselItem key={index} className="pl-0 h-full relative">
-                  <motion.img
-                    style={{ y }}
-                    src={img}
-                    alt={`${project.title} - Image ${index + 1}`}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            {(project.images ?? []).length > 1 && (
-              <div className="absolute right-12 bottom-32 z-30 flex gap-2">
-                <CarouselPrevious className="relative inset-auto translate-y-0 bg-black/50 hover:bg-primary hover:text-black border-white/20 text-white rounded-none" />
-                <CarouselNext className="relative inset-auto translate-y-0 bg-black/50 hover:bg-primary hover:text-black border-white/20 text-white rounded-none" />
-              </div>
-            )}
-          </Carousel>
+          {project.videoUrl ? (
+            <motion.video
+              style={{ y }}
+              src={project.videoUrl}
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster={project.image}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <Carousel className="w-full h-full">
+              <CarouselContent className="h-full ml-0">
+                {(project.images ?? [project.image]).map((img, index) => (
+                  <CarouselItem key={index} className="pl-0 h-full relative">
+                    <motion.img
+                      style={{ y }}
+                      src={img}
+                      alt={`${project.title} - Image ${index + 1}`}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              {(project.images ?? []).length > 1 && (
+                <div className="absolute right-12 bottom-32 z-30 flex gap-2">
+                  <CarouselPrevious className="relative inset-auto translate-y-0 bg-black/50 hover:bg-primary hover:text-black border-white/20 text-white rounded-none" />
+                  <CarouselNext className="relative inset-auto translate-y-0 bg-black/50 hover:bg-primary hover:text-black border-white/20 text-white rounded-none" />
+                </div>
+              )}
+            </Carousel>
+          )}
 
           <div className="absolute bottom-0 left-0 right-0 z-20 p-6 md:p-12 lg:p-24 pointer-events-none">
             <Link href="/work">

@@ -53,6 +53,12 @@ export const projectsMeta: ProjectMeta[] = [
     title: "BERNARDO CARPIO KOMIKS: Augmented Reality Comics",
     shortDescription: "A phone camera turns the printed page into a 3D scene. The first AR reading experience built for Filipino comics.",
     ogImage: "/og-images/bernardo-carpio.png"
+  },
+  {
+    slug: "qnb-interactive-coloring-app",
+    title: "QNB INTERACTIVE COLORING APP: Color It, Then Watch It Move",
+    shortDescription: "A child colors a printed page, holds it up to a camera, and watches their exact colors come alive on screen in seconds.",
+    ogImage: "/og-images/qnb-coloring.jpg"
   }
 ];
 

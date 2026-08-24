@@ -23,6 +23,8 @@ import carpioAr2 from "@assets/bernardo-carpio-ar-2.png";
 import carpioAr3 from "@assets/bernardo-carpio-ar-3.png";
 import carpioCover from "@assets/bernardo-carpio-cover.png";
 import carpioHero from "@assets/bernardo-carpio-hero.png";
+import qnbPoster from "@assets/qnb-coloring-poster.jpg";
+import qnbVideo from "@assets/generated_videos/qnb-coloring-app.mp4";
 
 export interface Deliverable {
   title: string;
@@ -37,6 +39,7 @@ export interface Project {
   theExperience?: string;
   image: string;
   images?: string[];
+  videoUrl?: string;
   externalUrl?: string;
   category: string;
   tags?: string[];
@@ -164,13 +167,30 @@ export const projects: Project[] = [
     title: "BERNARDO CARPIO KOMIKS: Augmented Reality Comics",
     shortDescription: "A phone camera turns the printed page into a 3D scene. The first AR reading experience built for Filipino comics.",
     description: "A comic book is usually a flat page you read once and put down. We built an AR layer for Bernardo Carpio Komiks that lets the characters step off the page in 3D, using nothing but a phone camera pointed at the panel.",
-    theExperience: "A reader opens the free companion app, points their phone at a page, and the character stands up off the paper in full 3D, right on the table in front of them. It's a first for Filipino comics. The moment that matters isn't the tech working, it's a reader realizing the story they've been reading is suddenly standing in their own living room.",
+    theExperience: "A reader opens the free companion app, points their phone at a page, and the character stands up off the paper in full 3D, right on the table in front of them, moving through real Filipino martial arts stances instead of just standing there. It's a first for Filipino comics. The moment that matters isn't the tech working, it's a reader realizing the story they've been reading is suddenly standing in their own living room.",
     image: carpioHero,
     images: [carpioHero, carpioAr1, carpioAr2, carpioAr3, carpioCover],
     deliverables: [
       { title: "First-of-its-kind AR reading", description: "A phone-camera experience that turns a printed page into a 3D scene." },
+      { title: "Animated with real martial arts", description: "The character moves through authentic Filipino martial arts forms, not a generic idle animation." },
       { title: "Built for a local story", description: "An experience made specifically for a Filipino character and a Filipino audience, not a generic AR template." },
       { title: "A reason to pick the book back up", description: "A feature that gives a comic a second life after the first read." }
+    ]
+  },
+  {
+    slug: "qnb-interactive-coloring-app",
+    category: "AI Activation",
+    tags: ["AI", "Experiential", "Banking"],
+    title: "QNB INTERACTIVE COLORING APP: Color It, Then Watch It Move",
+    shortDescription: "A child colors a printed page, holds it up to a camera, and watches their exact colors come alive on screen in seconds.",
+    description: "Kids color printed pages with crayons all the time. We built a way for Qatar National Bank to bring that coloring page to life on a screen the moment a child finished it, using AI to turn a crayon drawing into a moving scene in real time.",
+    theExperience: "A child colors a printed QNB page by hand, the same way they always have, then holds it up to a camera at the event. Within seconds, their exact coloring choices appear animated on a live display: their colors, their choices, moving. Parents watched their kids point at the screen and say \"that's mine.\" That's the whole point: the tech disappears, and what's left is a kid seeing their own drawing come alive.",
+    image: qnbPoster,
+    videoUrl: qnbVideo,
+    deliverables: [
+      { title: "Real crayon, real recognition", description: "AI that read each child's actual coloring choices, not a generic animation." },
+      { title: "Instant turnaround", description: "A live event display fast enough to keep up with a line of excited kids." },
+      { title: "A brand moment kids actually enjoyed", description: "A banking activation that felt like play, not marketing." }
     ]
   }
 ];
