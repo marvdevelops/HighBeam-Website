@@ -43,7 +43,7 @@ const staticPagesMeta: Record<string, { title: string; description: string }> = 
 export function getMetaForPath(pathname: string): PageMeta | null {
   const staticMeta = staticPagesMeta[pathname];
   if (staticMeta) {
-    return { ...staticMeta, image: "/og-image.png", type: "website" };
+    return { ...staticMeta, image: "/opengraph.jpg", type: "website" };
   }
 
   const workMatch = pathname.match(/^\/work\/([^/]+)\/?$/);

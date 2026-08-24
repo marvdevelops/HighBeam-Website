@@ -34,13 +34,13 @@ export const projectsMeta: ProjectMeta[] = [
     slug: "koko-safe-ai-for-kids",
     title: "KOKO: Safe AI Companion for Kids",
     shortDescription: "A chat companion for kids 5 to 10, built with parental controls and safety filtering from day one, not bolted on after launch.",
-    ogImage: "/og-image.png"
+    ogImage: "/opengraph.jpg"
   },
   {
     slug: "survivalkit-emergency-guide",
     title: "SURVIVALKIT: Offline Emergency Guide",
     shortDescription: "484 emergency locations, a go-bag tracker, and first aid guides, all working with zero signal. Built for the moment your phone has no bars.",
-    ogImage: "/og-image.png"
+    ogImage: "/opengraph.jpg"
   }
 ];
 
